@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-// import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 export default () => (
   <Layout>
