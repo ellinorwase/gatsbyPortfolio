@@ -9,7 +9,7 @@ export default () => (
     <h3>Kontaktuppgifter finner du nedan:</h3>
     <p>
       Mail:
-      <a href="mailto:me@example.com"> ellinor.wase@gmail.com</a>
+      <a href="mailto:ellinor.wase@gmail.com"> ellinor.wase@gmail.com</a>
     </p>
     <p>Telefonnummer: 076-3628412</p>
   </div>
