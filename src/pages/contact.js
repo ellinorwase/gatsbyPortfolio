@@ -5,10 +5,13 @@ import Layout from "../components/layout"
 export default () => (
     <Layout>
   <div>
-    <h1>I'd love to talk! Email me at the address below</h1>
+    <h1>För vidare information ser jag gärna att du kontaktar mig!</h1>
+    <h3>Kontaktuppgifter finner du nedan:</h3>
     <p>
-      <a href="mailto:me@example.com">me@example.com</a>
+      Mail:
+      <a href="mailto:me@example.com"> ellinor.wase@gmail.com</a>
     </p>
+    <p>Telefonnummer: 076-3628412</p>
   </div>
   </Layout>
 
