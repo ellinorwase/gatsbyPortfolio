@@ -2,9 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 // import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-// import styles from "../styles/global.css"
-
-
 export default () => (
   <Layout>
     <h1 className="header">Välkommen till min portfolio!</h1>
