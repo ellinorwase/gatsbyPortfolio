@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import { Bar, Pie, Doughnut } from "react-chartjs-2"
+import { Bar, Radar, Pie, Doughnut } from "react-chartjs-2"
 
 export default () => (
   <Layout>
@@ -59,11 +59,11 @@ export default () => (
               ],
               // backgroundColor: "blue"
               backgroundColor: [
-                "blue",
-                "red",
+                "#76FEC5",
+                "#B40A1B",
                 "yellow",
                 "orange",
-                "black",
+                "#BBC9DD",
                 "green",
                 "pink",
                 "brown",
@@ -115,26 +115,26 @@ export default () => (
     <div>
       <Pie
         data={{
-          labels: ["Sammanlagda skjutningar", "Antal dödade", "Antal skadade"],
+          labels: ["Pop", "Rock", "Dance/Electronic/House", "Soundtracks", "Hip-Hop/Rap","Songwriter", "Opera/Classical", "R&B", "Blues", "Metal"],
           datasets: [
             {
               label: "number",
-              data: [306, 45, 135],
-              backgroundColor: ["#FB9F82", "#A771FE", "#BBC9DD"],
+              data: [64, 57, 32, 30,26,24,24,23,22,19],
+              backgroundColor: ["#FB9F82","#77BD8B", "#A771FE", "#BBC9DD", "#FFC11E", "#5199FF","#F59BAF", "#ARCFEA","#B40A1B", "#380438"],
             },
           ],
         }}
         options={{
           title: {
             display: true,
-            text: "Skjutningar i Sverige 2018",
+            text: "Världens mest populära genrer",
             fontSize: 40,
             fontFamily: "serif",
           },
         }}
       />
 
-      <Pie
+      <Bar
         data={{
           labels: ["Sammanlagda skjutningar", "Antal dödade", "Antal skadade"],
           datasets: [
