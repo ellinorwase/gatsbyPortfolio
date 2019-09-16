@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import { Bar, Radar, Pie, Doughnut } from "react-chartjs-2"
+import { Bar, Pie, Doughnut } from "react-chartjs-2"
+import Img from "gatsby-image"
 
-export default () => (
+export default props => (
   <Layout>
     <div>
       <h1>Mina arbeten</h1>
@@ -12,15 +13,18 @@ export default () => (
       </p>
 
       <h3>My webbsites:</h3>
-      <p>
-        <OutboundLink
-          href="https://ellinorwase.github.io/git-project/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          About Git
-        </OutboundLink>
-      </p>
+      <OutboundLink
+        href="https://ellinorwase.github.io/git-project/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          className="git-pic"
+          fluid={props.data.aboutgit.childImageSharp.fluid}
+        />
+        <p>About Git</p>
+      </OutboundLink>
+      
       <p>
         <OutboundLink
           href="https://ellinorwase.github.io/JS_animations/"
@@ -30,6 +34,21 @@ export default () => (
           JS Animations
         </OutboundLink>
       </p>
+
+      <div className="link-div">
+      <OutboundLink
+        href="https://eager-minsky-400736.netlify.com/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <Img
+          className="git-pic"
+          fluid={props.data.kizz.childImageSharp.fluid}
+          />
+
+        <p>KIϟϟ</p>
+      </OutboundLink>
+          </div>
       <img
         className="about-pic"
         src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1057&q=80"
@@ -115,12 +134,34 @@ export default () => (
     <div>
       <Pie
         data={{
-          labels: ["Pop", "Rock", "Dance/Electronic/House", "Soundtracks", "Hip-Hop/Rap","Songwriter", "Opera/Classical", "R&B", "Blues", "Metal"],
+          labels: [
+            "Pop",
+            "Rock",
+            "Dance/Electronic/House",
+            "Soundtracks",
+            "Hip-Hop/Rap",
+            "Songwriter",
+            "Opera/Classical",
+            "R&B",
+            "Blues",
+            "Metal",
+          ],
           datasets: [
             {
               label: "number",
-              data: [64, 57, 32, 30,26,24,24,23,22,19],
-              backgroundColor: ["#FB9F82","#77BD8B", "#A771FE", "#BBC9DD", "#FFC11E", "#5199FF","#F59BAF", "#ARCFEA","#B40A1B", "#380438"],
+              data: [64, 57, 32, 30, 26, 24, 24, 23, 22, 19],
+              backgroundColor: [
+                "#FB9F82",
+                "#77BD8B",
+                "#A771FE",
+                "#BBC9DD",
+                "#FFC11E",
+                "#5199FF",
+                "#F59BAF",
+                "#ARCFEA",
+                "#B40A1B",
+                "#380438",
+              ],
             },
           ],
         }}
@@ -155,5 +196,24 @@ export default () => (
         }}
       />
     </div>
+    
   </Layout>
 )
+export const query = graphql`
+  query {
+    aboutgit: file(relativePath: { eq: "aboutgit.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    kizz: file(relativePath: { eq: "kizz-pic.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+  }
+`

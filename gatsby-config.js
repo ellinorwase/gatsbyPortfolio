@@ -3,39 +3,44 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-const path = require(`path`)
+console.log(`HÄR:  ${__dirname}/src/images` );
+
 module.exports = {
   /* Your site config here */
     plugins: [
+      // Typography
         {
           resolve: `gatsby-plugin-typography`,
           options: {
             pathToConfigModule: `src/utils/typography`,
           },
         },
+        // Image
         {
           resolve: `gatsby-source-filesystem`,
           options: {
             name: `images`,
-            path: path.join(__dirname, `src`, `images`),
+            path: `${__dirname}/src/images`,
           },
         },
-        `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        // Google Analytict
         {
           resolve: `gatsby-plugin-google-analytics`,
           options: {     
             trackingId: "UA-146676054-1"
           }
-        }
-        // },
+        },
+        // SVG-pics
         // {
-        //   resolve: `gatsby-plugin-google-analytics`,
+        //   resolve: "gatsby-plugin-react-svg",
         //   options: {
-        //     trackingID: "UA-146676054-1",
+        //     rule: {
+        //       include: /assets/ // See below to configure properly
+        //     }
         //   }
         // }
-      
       ],
       
       
