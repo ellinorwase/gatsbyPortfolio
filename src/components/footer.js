@@ -5,14 +5,16 @@ import facebook from "../images/iconmonstr-facebook-3.svg";
 import github from "../images/iconmonstr-github-3.svg";
 import gmail from "../images/iconmonstr-gmail-3.svg";
 import phone from "../images/iconmonstr-smartphone-3.svg";
+import {useSpring, animated} from 'react-spring';
+
 
 export default () => (
-
-    <footer className="footer">
+    
+    <footer className="footer" id="contact">
     <ul className="footer-menu" style={{textDecoration: `none`}}>
-        <Link className="h-menu nav-link nav-link-ltr" to="/">Home</Link>
-        <Link className="h-menu nav-link nav-link-ltr" to="/about/">Projects</Link>
-        <Link className="h-menu nav-link nav-link-ltr" to="/contact/">Contact</Link>
+    <Link to="/" className="h-menu nav-link nav-link-ltr">Home</Link>
+  <Link to="/#projects" className="h-menu nav-link nav-link-ltr">Projects</Link>
+  <Link to="/#contact" className="h-menu nav-link nav-link-ltr">Contact</Link>
         <div className="logo-pics">
         <a href="https://www.linkedin.com/in/ellinor-vase-38075716b/"
         target="_blank">

@@ -1,38 +1,115 @@
 html {
-  background-color: rgb(44, 42, 43);
   background-image: url("https://images.unsplash.com/photo-1457732815361-daa98277e9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-image: url("../images/10730.jpg");
+  /* background-attachment: fixed; */
+  scroll-behavior: smooth;
+  height: 100vh;
+  /* background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animate 15s linear infinite; */
+  /* background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
+}
+
+#intro {
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
   background-attachment: fixed;
+  top: 0;
 }
 
-body{
+h6 {
+  text-align: center;
   color: white;
+  position: relative;
+  -webkit-animation-name: welcome; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: welcome;
+  animation-duration: 4s;
+}
+.welcome-intro {
+  font-size: 3em;
+  margin-top: 20%;
+  font-family: serif;
+  z-index: 10;
 }
 
- h1,h2,h3,h4{
-   color: white;
- }
+.welcome {
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+}
 
-ul{
+@keyframes welcome {
+  0% {
+    left: -200px;
+    top: 0px;
+    transform: rotate(30deg);
+  }
+  50% {
+    left: 200px;
+    top: 0px;
+    transform: rotate(-30deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+body {
+  color: #116466;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #2c3531;
+}
+
+ul {
   margin-left: 0px;
 }
 
+img.profile-pic {
+  text-align: right;
+  width: 10%;
+  margin-left: 70%;
+  margin-top: 10%;
+  position: absolute;
+}
+/* 
 .header {
   color: rgba(255, 255, 255, 0.774);
-}
+} */
 
 div > header > ul.menu {
   list-style: none;
   float: right;
   font-family: serif;
   font-size: 150%;
+  z-index: 10;
 }
 
 a {
   text-shadow: none;
 }
 
-a:hover{
-color: rgb(255, 255, 255);
+a:hover {
+  color: rgb(255, 255, 255);
 }
 
 /* Underline menu */
@@ -50,8 +127,7 @@ color: rgb(255, 255, 255);
   height: 2px;
   content: "";
   position: absolute;
-  background-color: #39af97;
-
+  background-color: #116466;
 }
 
 .nav-link-ltr::before {
@@ -67,16 +143,18 @@ color: rgb(255, 255, 255);
   display: inline;
   font-size: 280%;
   font-family: serif;
-  color: #39af97;
+  color: #116466;
   position: relative;
-  -webkit-animation-name: portfolio; 
-  -webkit-animation-duration: 3s; 
-  -webkit-animation-iteration-count: 10; 
-  -webkit-animation-direction: alternate-reverse; 
+  -webkit-animation-name: portfolio;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 10;
+  -webkit-animation-direction: alternate-reverse;
   animation-name: portfolio;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-direction: alternate-reverse;
+  /* margin: 3rem auto;
+  padding: 0 5rem; */
 }
 
 @-webkit-keyframes portfolio {
@@ -94,8 +172,7 @@ color: rgb(255, 255, 255);
   }
 }
 
-
-.about-pic{
+.about-pic {
   margin-top: 100px;
   border-radius: 10px;
   opacity: 20%;
@@ -104,111 +181,243 @@ color: rgb(255, 255, 255);
   display: block;
 }
 
-.contact-pic1{
+.contact-pic1 {
   width: 30%;
   height: auto;
   margin: auto;
   margin-bottom: 10px;
 }
-.contact-pic2{
+.contact-pic2 {
   width: 30%;
   height: auto;
   margin: auto;
 }
 
-.git-pic{
+.git-pic {
   width: 200px;
   height: 80px;
   border-radius: 10px;
 }
 
-.link-div{
+.link-div {
   text-align: right;
   margin: 0 auto;
 }
 
-.footer{
+.footer {
   /* background-color: rgb(167, 167, 167); */
-  background-image: url("../images/footer-background\ \(1\).png");
-  background-size: cover;
+  /* background-image: url("../images/footer-background\ \(1\).png"); */
+  /* background-size: cover; */
+  background-color: #d9b08c;
+  background-color: #ffcb9a;
   height: 50%;
   margin: 0px;
   padding: 0px;
+  z-index: 10;
 }
-.footer-menu{
+.footer-menu {
   text-align: center;
   text-decoration: none;
   margin-top: 20px;
-
+  color: #116466;
 }
-.footer-menu{
+.footer-menu {
   text-decoration: none;
   padding: 10px 30px 0 30px;
   font-size: 22px;
 }
-.footer-menu>li{
+.footer-menu > li {
   padding: 20px 30px 0 30px;
   background-image: none;
 }
 
-.h-menu{
+.h-menu {
   background-image: none;
   margin: 10px;
+  color: #116466;
 }
-.h-menu:hover{
+.h-menu:hover {
   color: #39af97;
 }
 
-
-.footer-contact{
+.footer-contact {
   list-style: none;
   text-align: center;
 }
-.footer-contact>li>h4{
+.footer-contact > li > h4 {
   margin: 0px;
   padding: 0px;
 }
 
-.logo-pics>a>img{
+.logo-pics > a > img {
   margin: 0px 10px 0px 10px;
   width: 3%;
   border-radius: 50%;
   transition: 0.3s;
 }
-.logo-pics>a{
+.logo-pics > a {
   background-image: none;
 }
 
-.logo-pics>a>img:hover{
+.logo-pics > a > img:hover {
   /* background-color: #2e5dc5; */
   border-radius: 5px;
 }
 
 /* Phone-pic */
 
-.phone-pic:hover{
+.phone-pic:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 /* Phone-pic */
 
-.phone-pic{
+.phone-pic {
   transition: 0.3s;
   margin: 0px;
 }
-footer>ul>li>p{
+footer > ul > li > p {
   font-size: 15px;
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  display: inline;
+  margin-left: 12px;
+}
+
+ul#navbar.menu {
+  margin-left: -10%;
+  display: grid;
+}
+
+/* Menu-top */
+#slide {
+  left: -100px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 1.5s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+  position: fixed;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+/* Menu-top */
+
+/* Animation */
+.box-area {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style-type: none;
+  width: 25px;
+  height: 25px;
+  background: #f5bb3f7e;
+  animation: animate 20s linear infinite;
+  bottom: -350px;
+}
+
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+  left: 9%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+  left: 35%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+  animation-duration: 3.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Animation */
