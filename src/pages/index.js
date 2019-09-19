@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-import profilePic from "../images/images.jpeg"
 
 
 export default () => (
