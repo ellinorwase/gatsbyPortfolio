@@ -96,3 +96,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 # gatsbyPortfolio
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5d66f339-a8d0-4d17-aa17-8a88d6d67607/deploy-status)](https://app.netlify.com/sites/naughty-babbage-547470/deploys)
