@@ -18,21 +18,43 @@ html {
 #intro {
   height: 100%;
   width: 100vw;
-  background-color: rgb(0, 0, 0);
+  background-color: #ffcb9abb;
   position: fixed;
   top: 0;
-  z-index: 11;
+  z-index: -1;
+}
+
+.intro{
+  -webkit-animation-name: intro; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: intro;
+  animation-duration: 4s;
+}
+
+@keyframes intro{
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50%{
+    left: -5%;
+    top: 0px;
+  }
+  100% {
+    left: 100%;
+    top: 0px;
+  }
 }
 
 h6 {
   text-align: center;
   color: white;
-  position: relative;
   -webkit-animation-name: welcome; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: welcome;
   animation-duration: 4s;
 }
+
 .welcome-intro {
   font-size: 3em;
   margin-top: 20%;
@@ -48,8 +70,9 @@ h6 {
 }
 
 .profilePic{
-  width: 25%;
-  margin: 0px;
+  width: 15%;
+  margin-bottom: 0px;
+  margin-top: 5px;
 }
 
 
@@ -461,15 +484,16 @@ ul#navbar.menu {
 
 
 #card {
-  width: 20ch;
-  height: 20ch;
+  width: 45ch;
+  height: 30ch;
   background: grey;
   border-radius: 5px;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
-  border: 15px solid white;
-  display: inline-flex;
-  margin: 10px;;
+  border: 10px solid white;
+  border-bottom: 35px solid white;
+  display: block;
+  margin: 20px auto;
 }
 
 div.card{
@@ -482,18 +506,19 @@ div.card{
 }
 
 #card:hover {
-  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 90px 130px -10px rgba(0, 0, 0, 0.555);
 }
 
-.card>p{
-  position: absolute;
-  transform: rotate(90deg);
-  font-size: 20px;
-  padding: 10px;
+#card>a>p{
+  /* transform: rotate(90deg); */
+  font-size: 25px;
   margin-bottom: 0px;
+  text-align: center;
+  margin: auto;
+  color: #ffcb9a;
+  font-family: 'Work Sans',sans-serif;
 }
-.card>p:hover{
-  position: absolute;
-  display: block;
-  transform: rotate(90deg);
+
+#card>a>p:hover{
+  color: #c7813f;
 }

@@ -17,14 +17,23 @@ export default () => (
       <div style={props} id="intro" className="intro">
         {/* <AnimatedDonut percent={round.value} /> */}
 
-        <div>
           <h6 className="welcome-intro">Welcome</h6>
-        </div>
+        
         <div className="welcome">
           <img src={welcome} alt="welcome" />
         </div>
-        <div></div>
       </div>
     )}
   </Spring>
 )
+
+{/* <iframe
+          src={video}
+          allow="accelerometer; autoplay; encrypted-media;"
+          height="100%" width="100%"
+          margin="0px"
+          frameBorder="0"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+          allowFullScreen
+        /> */}

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { Spring } from 'react-spring/renderprops';
 import profilePic from "../images/images.jpeg";
-import svg from "../images/jag.svg"
+import svg from "../images/9qRrJDXto1.svg"
 import {useSpring, animated} from 'react-spring'
 
 // const profile = useSpring({ x: 100, from: { x: 0 } })
