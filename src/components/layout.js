@@ -7,6 +7,7 @@ import Projects from "./projects"
 import Menu from "./menu"
 import Intro from "./intro"
 import Svg from "../components/svg"
+import BoxArea from "../components/box-area";
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -16,10 +17,11 @@ const ListLink = props => (
 
 export default ({ children }) => (
   <div>
-<Intro/>
+{/* <Intro/> */}
+<div className="korv">
     <Svg/>
     <Menu/>
-    <div style={{ margin: `3rem auto`, maxWidth: 1000, padding: `0 1rem` }}>
+    <div style={{ margin: `0 auto`, maxWidth: 1000, padding: `3rem 1rem 0 1rem` }}>
       <Header />
     </div>
     <Spring
@@ -30,14 +32,19 @@ export default ({ children }) => (
       {props => (
         <div style={props}>
           <div
-            style={{ margin: `3rem auto`, maxWidth: 1000, padding: `0 1rem` }}
+            style={{ margin: `0 auto`, maxWidth: 1000, padding: `0 1rem` }}
           >
             {children}
             <Projects />
-          </div>
-          <Footer />
+            <BoxArea/>
+          </div>       
         </div>
+        
       )}
+      
     </Spring>
+</div>
+    <Footer />
+    
   </div>
 )

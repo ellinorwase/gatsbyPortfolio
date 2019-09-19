@@ -5,7 +5,7 @@ import { Spring } from "react-spring/renderprops"
 export default () => (
   <Spring from={{ opacity: 0 }} config={{ delay: 1000, duration: 1000 }} to={{ opacity: 1 }}>
     {props => (
-      <div style={props} id="projects">
+      <div style={props} >
         <nav id="slide">
           <ul className="menu" style={{ textDecoration: `none` }} id="navbar">
             <Link to="/" className="h-menu nav-link nav-link-ltr">
