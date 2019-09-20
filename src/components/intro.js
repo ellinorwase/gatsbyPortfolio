@@ -14,17 +14,21 @@ export default () => (
     to={{ opacity: 0 }}
   >
     {props => (
-      <div style={props} id="intro" className="intro">
+      <div style={props}>
         {/* <AnimatedDonut percent={round.value} /> */}
+ 
+      <div id="intro1" className="intro1">
+           <h6 id="welcome" className="wel">WEL</h6>      
+      </div>
 
-          <h6 className="welcome-intro">Welcome</h6>
-        
-        <div className="welcome">
-          <img src={welcome} alt="welcome" />
-        </div>
+      <div id="intro2" className="intro2">
+      <h6 id="welcome" className="come">COME</h6>      
+      </div>
       </div>
     )}
   </Spring>
+
+
 )
 
 {/* <iframe

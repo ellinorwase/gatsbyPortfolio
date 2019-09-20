@@ -25,7 +25,7 @@ const bilder =[
     {
       img: barabarn,
       text: 'Barabarn Böcker',
-      loink: "https://fridaschoultz.github.io/webbshop/"
+      link: "https://fridaschoultz.github.io/webbshop/"
     },
 ]
 
@@ -39,16 +39,16 @@ export default () => (
 
 <h1>My Projects</h1>
       <p>
-          Here you can find som om the project that I have done.
+          Here you can find some of the project that I have done.
       </p>
-      <h3>My webbsites:</h3>
+      <h3>My websites:</h3>
       {bilder.map((object, index) => {
           return (
         <div id="card" key={index}>
           <a href={object.link} target="_blank">
             <div className="card" style={{backgroundImage:`url(${object.img})`}}>
             </div>
-            <p>Webbsite: {object.text}</p>
+            <p>Website: {object.text}</p>
           </a>
         </div>
           )

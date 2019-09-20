@@ -15,29 +15,52 @@ html {
   /* background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
 }
 
-#intro {
+#intro1 {
   height: 100%;
-  width: 100vw;
-  background-color: #ffcb9abb;
+  width: 50vw;
+  background-color: #ffcb9ab6;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+#intro2 {
+  height: 100%;
+  width: 50vw;
+  background-color: #116566ab;
   position: fixed;
   top: 0;
   z-index: -1;
 }
 
-.intro{
-  -webkit-animation-name: intro; /* Safari 4.0 - 8.0 */
+.intro1{
+  -webkit-animation-name: intro1; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: intro;
+  animation-name: intro1;
   animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes intro{
+.intro2{
+  -webkit-animation-name: intro2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: intro2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes intro1{
   0% {
-    left: 0px;
+    right: 50%;
     top: 0px;
   }
-  50%{
-    left: -5%;
+  100% {
+    right: 100%;
+    top: 0px;
+  }
+}
+@keyframes intro2{
+  0% {
+    left: 50%;
     top: 0px;
   }
   100% {
@@ -54,25 +77,24 @@ h6 {
   animation-name: welcome;
   animation-duration: 4s;
 }
-
-.welcome-intro {
-  font-size: 3em;
-  margin-top: 20%;
+#welcome{
+  font-size: 5em;
+  margin-top: 50%;
   font-family: serif;
   z-index: 10;
 }
+.wel {
+  text-align: right;
+}
 
-.welcome {
-  width: 20%;
-  height: auto;
-  text-align: center;
-  margin: auto;
+.come {
+  text-align: left;
 }
 
 .profilePic{
   width: 15%;
   margin-bottom: 0px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 
@@ -135,6 +157,10 @@ div > header > ul.menu {
   font-family: serif;
   font-size: 150%;
   z-index: 10;
+}
+
+h1.header{
+  margin-top: 0px;
 }
 
 a {
@@ -270,7 +296,7 @@ footer{
 
 .h-menu {
   background-image: none;
-  margin: 10px;
+  margin: 0px 0px 0px 5px;
   color: #116466;
 }
 .h-menu:hover {
@@ -498,7 +524,6 @@ ul#navbar.menu {
 
 div.card{
   background-size: cover;
-  background-position: center center;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -521,4 +546,22 @@ div.card{
 
 #card>a>p:hover{
   color: #c7813f;
+}
+
+@media only screen and (max-width: 700px) {
+  .profilePic{
+    display: none;
+  }
+  header{
+    margin-top: 20%;
+  }
+  a.h-menu.nav-link.nav-link-ltr{
+    display: contents;
+  }
+  #card>a>p{
+    font-size: 20px;
+  }
+  .logo-pics > a > img{
+    width: auto;
+  }
 }

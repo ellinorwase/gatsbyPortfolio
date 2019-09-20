@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Spring } from 'react-spring/renderprops';
-import svg from "../images/9qRrJDXto1.svg"
+import svg from "../images/rWKWqbUUQa.svg"
 import {useSpring, animated} from 'react-spring'
 
 // const profile = useSpring({ x: 100, from: { x: 0 } })
@@ -17,7 +17,7 @@ import {useSpring, animated} from 'react-spring'
     <div style={props}>
 
 
-<header style={{ marginBottom: `20%` }}>
+<header style={{ marginBottom: `10%` }}>
 <Link to="/" style={{ textShadow: `none` }}>
   <h3 className="portfoliotext" > Ellinor Vase</h3>
     <img className="profilePic" src={svg} alt="profilePic"/>
