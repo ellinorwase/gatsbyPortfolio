@@ -8,6 +8,7 @@ import Menu from "./menu"
 import Intro from "./intro"
 import Svg from "../components/svg"
 import BoxArea from "../components/box-area";
+import Chart from "../components/chart";
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -35,6 +36,7 @@ export default ({ children }) => (
             style={{ margin: `0 auto`, maxWidth: 1000, padding: `0 1rem` }}
           >
             {children}
+            <Chart/>
             <Projects />
             <BoxArea/>
           </div>       

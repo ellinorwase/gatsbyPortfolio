@@ -1,6 +1,6 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
-import facebook from "../images/iconmonstr-facebook-3.svg";
+import pussle from "../images/imageedit_17_6550897277.png";
 
 export default () => (
 <Spring 
@@ -10,7 +10,7 @@ export default () => (
         >
 {props => (
 <div style={props}>
-  <img className="profile-pic" src={facebook} alt="facebook"/>
+  <img className="profile-pic" src={pussle} alt="pussle"/>
 </div>
 )}
      
