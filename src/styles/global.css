@@ -280,11 +280,8 @@ footer{
 
 .footer-menu {
   text-align: center;
-  text-decoration: none;
   margin-top: 20px;
   color: #116466;
-}
-.footer-menu {
   text-decoration: none;
   padding: 10px 30px 0 30px;
   font-size: 22px;
@@ -298,6 +295,7 @@ footer{
   background-image: none;
   margin: 0px 0px 0px 5px;
   color: #116466;
+  padding: 10px;
 }
 .h-menu:hover {
   color: #39af97;
@@ -564,4 +562,12 @@ div.card{
   .logo-pics > a > img{
     width: auto;
   }
+  div#card{
+    width: auto;
+    height: 40vh; 
+  }
+  /* .footer-m>a{
+    padding: 10px;
+  } */
+  
 }

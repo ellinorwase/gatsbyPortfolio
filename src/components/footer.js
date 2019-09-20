@@ -12,9 +12,11 @@ export default () => (
     
     <footer className="footer" id="contact">
     <ul className="footer-menu" style={{textDecoration: `none`}}>
+      <div className="footer-m">
     <Link to="/" className="h-menu nav-link nav-link-ltr">Home</Link>
   <Link to="/#projects" className="h-menu nav-link nav-link-ltr">Projects</Link>
   <Link to="/#contact" className="h-menu nav-link nav-link-ltr">Contact</Link>
+      </div>
         <div className="logo-pics">
         <a href="https://www.linkedin.com/in/ellinor-vase-38075716b/"
         target="_blank">
