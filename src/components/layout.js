@@ -20,8 +20,10 @@ export default ({ children }) => (
   <div>
  <Intro/>
 <div className="korv">
+  <div className="Head">
     <Svg/>
     <Menu/>
+  </div>
     <div style={{ margin: `0 auto`, maxWidth: 1000, padding: `0rem 1rem 0 1rem` }}>
       <Header />
     </div>

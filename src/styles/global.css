@@ -558,11 +558,15 @@ div.card{
     display: none;
   }
   header{
-    margin-top: 20%;
+    margin-top: 10%;
   }
   a.h-menu.nav-link.nav-link-ltr{
     display: contents;
   }
+  menu{
+    display: inline-block;
+  }
+
   #card>a>p{
     font-size: 20px;
   }
@@ -572,6 +576,18 @@ div.card{
   div#card{
     width: auto;
     height: 40vh; 
+  }
+  img.profile-pic{
+    margin-top: 14%;
+    width: 24%;
+    position: relative;
+    margin-bottom: 0px;
+  }
+  .Head{
+    position: relative;
+  }
+  ul#navbar.menu>a{
+    display: inline-block;
   }
   /* .footer-m>a{
     padding: 10px;
