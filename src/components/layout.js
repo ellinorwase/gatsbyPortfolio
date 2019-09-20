@@ -19,7 +19,7 @@ const ListLink = props => (
 export default ({ children }) => (
   <div>
  <Intro/>
-<div className="korv">
+<div className="relative">
   <div className="Head">
     <Svg/>
     <Menu/>

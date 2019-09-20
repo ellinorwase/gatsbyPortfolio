@@ -480,7 +480,7 @@ ul#navbar.menu {
   animation-duration: 3.5s;
 }
 
-.korv{
+.relative{
   position:relative;
 }
 .animation-area{
@@ -582,6 +582,7 @@ div.card{
     width: 24%;
     position: relative;
     margin-bottom: 0px;
+    margin-left: 70%;
   }
   .Head{
     position: relative;
