@@ -41,7 +41,7 @@ export default () => (
 <div style={props}>
 
   <hr></hr> 
-  <h3> As said before, I study for Frontend Developer. <br /> An education that contains these following courses:</h3>
+  <h3> As said before, I study to become a Frontend Developer. <br /> An education that contains these following courses:</h3>
   <div className="row">
   
   <div id="courses">

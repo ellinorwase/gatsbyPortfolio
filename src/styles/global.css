@@ -688,6 +688,9 @@ div.card {
     grid-template-columns: repeat(1, 1fr);
   }
   #welcome {
-    font-size: 2em;
+    font-size: 1em;
+  }
+  body{
+    background-attachment: fixed;
   }
 }
