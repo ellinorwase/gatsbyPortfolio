@@ -17,12 +17,17 @@ export default () => (
       <div style={props}>
         {/* <AnimatedDonut percent={round.value} /> */}
  
-      <div id="intro1" className="intro1">
+        <div id="intro11" className="i1 intro">
+      </div>
+      <div id="intro1" className="i2 intro">
            <h6 id="welcome" className="wel">WEL</h6>      
       </div>
+      
 
-      <div id="intro2" className="intro2">
+      <div id="intro2" className="i3 intro">
       <h6 id="welcome" className="come">COME</h6>      
+      </div>
+      <div id="intro21" className="i4 intro">
       </div>
       </div>
     )}

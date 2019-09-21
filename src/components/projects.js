@@ -5,6 +5,9 @@ import gitPic from "../images/kizzgit.png"
 import kizz from "../images/kizz.png"
 import adobexd from "../images/adobeXd.png"
 import barabarn from "../images/barabarn.png"
+import check from "../images/check.png"
+import comming from "../images/comming.png"
+import pic from "../images/plugg1.svg"
 
 const bilder =[
     {
@@ -37,11 +40,49 @@ export default () => (
 {props => (
 <div style={props}>
 
+  <hr></hr> 
+  <h3> As said before, I study for Frontend Developer. <br /> An education that contains these following courses:</h3>
+  <div className="row">
+  
+  <div id="courses">
+  <ul className="courses">
+    <li><img className="list-style" src={check} alt=""/>
+      Introduction and project methodology</li>
+    <li><img className="list-style" src={check} alt=""/>
+    Frontend project</li>
+    <li><img className="list-style" src={check} alt=""/>
+    CMS tools, backend and interaction with databases</li>
+    <li><img className="list-style" src={check} alt=""/>
+    Graphics Tools</li>
+    <li><img className="list-style" src={check} alt=""/>
+    HTML and CSS</li>
+    <li><img className="list-style" src={check} alt=""/>
+    Javascript 1</li>
+    <li><img className="list-style" src={check} alt=""/>
+    Javascript 2</li>
+    <li><img className="list-style" src={check} alt=""/>
+    Javascript 3</li>
+    <li><img className="list-style" src={comming} alt=""/>
+    Javascript 4</li>
+    <li><img className="list-style" src={comming} alt=""/>
+    Master's thesis</li>
+    <li><img className="list-style" src={comming} alt=""/>
+    Internship 1 (10 Weeks)</li>
+    <li><img className="list-style" src={comming} alt=""/>
+    Internship 2 (12 weeks)</li>
+  </ul>
+  </div>
+  <div className="right">
+  <img className="right-pic" src={pic} alt=""/>
+  </div>
+  </div>
+  <hr></hr> 
+
 <h1>My Projects</h1>
       <p>
           Here you can find some of the project that I have done.
       </p>
-      <h3>My websites:</h3>
+      <h3>Websites:</h3>
       {bilder.map((object, index) => {
           return (
         <div id="card" key={index}>
@@ -53,16 +94,6 @@ export default () => (
         </div>
           )
         })}
-      
-
-
-        {/* <p>About Git</p>
-
-<a href="https://ellinorwase.github.io/git-project/"
-target="_blank">
-<img className="git-pic" src={gitPic} alt="gitPic"/>
-</a> */}
-        
 </div>
       
       )}

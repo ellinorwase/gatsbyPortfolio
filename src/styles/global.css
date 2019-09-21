@@ -15,56 +15,108 @@ html {
   /* background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
 }
 
-#intro1 {
+.intro{
   height: 100%;
-  width: 50vw;
+  width: 25vw;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.i1 {
+  background-color: #ffcb9a;
+  z-index: 1;
+
+  -webkit-animation-name: i1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: i1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+.i2 {
   background-color: #ffcb9ab6;
-  position: fixed;
-  top: 0;
-  z-index: -1;
+
+  -webkit-animation-name: i2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: i2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
-#intro2 {
-  height: 100%;
-  width: 50vw;
+
+.i3 {
   background-color: #116566ab;
-  position: fixed;
-  top: 0;
-  z-index: -1;
-}
+  right: 0;
 
-.intro1{
-  -webkit-animation-name: intro1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: i3; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: intro1;
+  animation-name: i3;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+.i4 {
+  background-color: #116566;
+  right: 0;
+
+  -webkit-animation-name: i4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: i4;
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 
-.intro2{
-  -webkit-animation-name: intro2; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: intro2;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes intro1{
+@keyframes i1 {
   0% {
-    right: 50%;
+    transform: translate3d(0%, 0, 0);
+    top: 0px;
+  }
+  50%{
+    transform: translate3d(0%, 0, 0);
     top: 0px;
   }
   100% {
-    right: 100%;
+    transform: translate3d(-100%, 0, 0);
     top: 0px;
   }
 }
-@keyframes intro2{
+@keyframes i2 {
   0% {
-    left: 50%;
+    transform: translate3d(100%, 0, 0);
+    top: 0px;
+  }
+  30%{
+    transform: translate3d(100%, 0, 0);
     top: 0px;
   }
   100% {
-    left: 100%;
+    transform: translate3d(-100%, 0, 0);
+    top: 0px;
+  }
+}
+@keyframes i3 {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    top: 0px;
+  }
+  30%{
+    transform: translate3d(-100%, 0, 0);
+    top: 0px;
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+    top: 0px;
+  }
+}
+@keyframes i4 {
+  0% {
+    transform: translate3d(0%, 0, 0);
+    top: 0px;
+  }
+  50%{
+    transform: translate3d(0%, 0, 0);
+    top: 0px;
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
     top: 0px;
   }
 }
@@ -77,7 +129,7 @@ h6 {
   animation-name: welcome;
   animation-duration: 4s;
 }
-#welcome{
+#welcome {
   font-size: 5em;
   margin-top: 50%;
   font-family: serif;
@@ -91,13 +143,12 @@ h6 {
   text-align: left;
 }
 
-.profilePic{
+.profilePic {
   width: 15%;
   margin-bottom: 0px;
   margin-top: 0px;
   margin-left: 5px;
 }
-
 
 @keyframes welcome {
   0% {
@@ -134,9 +185,7 @@ h2,
 h3,
 h4 {
   color: #2c3531;
-  font-family: 'Big Shoulders Text';
-  
-
+  font-family: "Big Shoulders Text";
 }
 
 ul {
@@ -149,9 +198,8 @@ img.profile-pic {
   margin-left: 75%;
   margin-top: 2%;
   position: absolute;
-  border: solid #ffcb9a;
+  border: solid #2C3531;
   border-width: 6px 0px 0px 6px;
-
 }
 /* 
 .header {
@@ -166,7 +214,7 @@ div > header > ul.menu {
   z-index: 10;
 }
 
-h1.header{
+h1.header {
   margin-top: 0px;
 }
 
@@ -281,7 +329,7 @@ a:hover {
   padding: 0px;
   z-index: 10;
 }
-footer{
+footer {
   position: relative;
 }
 
@@ -395,6 +443,46 @@ ul#navbar.menu {
   display: grid;
 }
 
+.chart{
+  margin-bottom: 7%;
+}
+
+.list-style {
+  width: 2%;
+  margin-right: 6px;
+}
+
+ul.courses > li {
+  list-style: none;
+  margin-bottom: 0px;
+  border-style: solid;
+  border-color: #ffcb9a;;
+  padding: 0.8%;
+  width: 100%;
+  margin: 5px;
+}
+.row{
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.right{
+height: 100%;
+}
+
+.right-pic{
+height: 66%;
+height: 95%;
+margin: auto 4% auto 4%;
+border-radius: 10px;
+}
+.right-pic:hover{
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+
 /* Menu-top */
 #slide {
   left: -100px;
@@ -424,7 +512,7 @@ ul#navbar.menu {
   left: 0;
   width: 100%;
   height: 100%;
-  position:absolute;
+  position: absolute;
   overflow: hidden;
   z-index: -10;
 }
@@ -437,7 +525,6 @@ ul#navbar.menu {
   background: #f5bb3f38;
   animation: animate 20s linear infinite;
   bottom: 0;
-  
 }
 
 .box-area li:nth-child(1) {
@@ -480,10 +567,10 @@ ul#navbar.menu {
   animation-duration: 3.5s;
 }
 
-.relative{
-  position:relative;
+.relative {
+  position: relative;
 }
-.animation-area{
+.animation-area {
   position: absolute;
   top: 0;
   left: 0;
@@ -491,7 +578,7 @@ ul#navbar.menu {
   width: 100%;
   z-index: -10;
 }
-.margin-top{
+.margin-top {
   margin: 0;
 }
 
@@ -509,10 +596,9 @@ ul#navbar.menu {
 }
 /* Animation */
 
-#projects{
+#projects {
   margin: 0;
 }
-
 
 #card {
   width: 75%;
@@ -527,7 +613,7 @@ ul#navbar.menu {
   margin: 20px auto;
 }
 
-div.card{
+div.card {
   background-size: cover;
   object-fit: cover;
   width: 100%;
@@ -539,59 +625,69 @@ div.card{
   box-shadow: 0px 90px 130px -10px rgba(0, 0, 0, 0.555);
 }
 
-#card>a>p{
+#card > a > p {
   /* transform: rotate(90deg); */
   font-size: 25px;
   margin-bottom: 0px;
   text-align: center;
   margin: auto;
   color: #ffcb9a;
-  font-family: 'Work Sans',sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
-#card>a>p:hover{
+#card > a > p:hover {
   color: #c7813f;
 }
 
 @media only screen and (max-width: 700px) {
-  .profilePic{
+  .profilePic {
     display: none;
   }
-  header{
+  header {
     margin-top: 10%;
   }
-  a.h-menu.nav-link.nav-link-ltr{
+  a.h-menu.nav-link.nav-link-ltr {
     display: contents;
   }
-  menu{
+  menu {
     display: inline-block;
   }
 
-  #card>a>p{
+  #card > a > p {
     font-size: 20px;
   }
-  .logo-pics > a > img{
+  .logo-pics > a > img {
     width: auto;
   }
-  div#card{
+  div#card {
     width: auto;
-    height: 40vh; 
+    height: 40vh;
   }
-  img.profile-pic{
+  img.profile-pic {
     margin-top: 14%;
     width: 24%;
     position: relative;
     margin-bottom: 0px;
     margin-left: 70%;
   }
-  .Head{
+  .Head {
     position: relative;
   }
-  ul#navbar.menu>a{
+  ul#navbar.menu > a {
     display: inline-block;
   }
-  /* .footer-m>a{
-    padding: 10px;
+  .right{
+    display: none;
+  }
+  /* ul.courses > li {
+    width: 100%;
+    margin: 5px;
   } */
-  
+  .row{
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #welcome {
+    font-size: 2em;
+  }
 }

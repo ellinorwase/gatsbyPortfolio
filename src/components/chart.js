@@ -2,18 +2,18 @@ import React from "react"
 import { Doughnut } from "react-chartjs-2"
 
 
-export default props => (
+export default () => (
 
 //  work 
-    <div>
+    <div className="chart">
       <Doughnut
         data={{
-          labels: ["Preschool teacher", "SF-bio", "Karolinska University Hospital"],
+          labels: ["Karolinska University Hospital", "SF-bio", "Preschool teacher"],
           datasets: [
             {
               label: "gender",
-              data: [4, 0.5, 1],
-              backgroundColor: ["rgb(111, 52, 223)", "rgb(1, 152, 123)", "red"],
+              data: [1, 0.5, 4],
+              backgroundColor: ["#D1E8E2","#2C3531", "#D9B08C"],
             },
           ],
         }}
