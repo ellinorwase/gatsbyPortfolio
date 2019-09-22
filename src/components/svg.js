@@ -1,6 +1,6 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
-import pussle from "../images/imageedit_17_6550897277.png";
+import pussle from "../images/PP.png";
 
 export default () => (
 <Spring 
