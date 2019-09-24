@@ -89,7 +89,7 @@ export default () => (
           <a href={object.link} target="_blank">
             <div className="card" style={{backgroundImage:`url(${object.img})`}}>
             </div>
-            <p>Website: {object.text}</p>
+            <p>{object.text}</p>
           </a>
         </div>
           )
