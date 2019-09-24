@@ -1,6 +1,6 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
-import Profile from "../images/PP-color.png";
+import Profile from "../images/pp-color.png";
 
 export default () => (
 <Spring 
