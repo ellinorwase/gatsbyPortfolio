@@ -480,6 +480,7 @@ ul.courses > li {
   margin-bottom: 0px;
   border-style: solid;
   border-color: #ffcb9a;
+  background-color: #d1e8e27e;
   padding: 0.8%;
   width: 100%;
   margin: 5px;
@@ -638,7 +639,7 @@ ul.courses > li {
 }
 
 div.card {
-  background-size: contain;
+  background-size: cover;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -678,6 +679,12 @@ div.card {
   body{
     width: 100%;
   }
+  div.card{
+    background-size: cover;
+  }
+  #card{
+    height: 35vh;
+  }
 }
 
 
@@ -714,7 +721,6 @@ div.card {
     width: auto;
   }
   div#card {
-    width: auto;
     height: 40vh;
   }
 
@@ -750,5 +756,8 @@ div.card {
   }
   .list-style{
     width: 6%
+  }
+  div.card{
+    background-size: contain;
   }
 }

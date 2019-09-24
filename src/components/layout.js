@@ -7,7 +7,7 @@ import Projects from "./projects"
 import Menu from "./headerMenu"
 import Intro from "./intro"
 import Svg from "./profile"
-// import BoxArea from "../components/box-area";
+import BoxArea from "../components/box-area";
 import Chart from "../components/chart";
 
 const ListLink = props => (
@@ -40,7 +40,7 @@ export default ({ children }) => (
             {children}
             <Chart/>
             <Projects />
-            {/* <BoxArea/> */}
+            <BoxArea/>
           </div>       
         </div>
         
