@@ -1,7 +1,6 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
 import { useSpring, animated } from "react-spring"
-import welcome from "../images/welcome.png"
 
 // const AnimatedDonut = animated(Donut)
 
@@ -11,23 +10,26 @@ export default () => (
   <Spring
     from={{ opacity: 1 }}
     config={{ delay: 3000, duration: 3000 }}
-    to={{ opacity: 0 }}
+    to={{ opacity: 1 }}
   >
     {props => (
       <div style={props}>
-        {/* <AnimatedDonut percent={round.value} /> */}
  
-        <div id="intro11" className="i1 intro">
+        <div className="i1 intro">
       </div>
-      <div id="intro1" className="i2 intro">
+
+      <div>
+      <div className="i2 intro">
            <h6 id="welcome" className="wel">WEL</h6>      
       </div>
-      
+      {/* <h6 id="welcome">WELCOME</h6>       */}
 
-      <div id="intro2" className="i3 intro">
+      <div className="i3 intro">
       <h6 id="welcome" className="come">COME</h6>      
       </div>
-      <div id="intro21" className="i4 intro">
+      </div>
+
+      <div className="i4 intro">
       </div>
       </div>
     )}
@@ -36,13 +38,3 @@ export default () => (
 
 )
 
-{/* <iframe
-          src={video}
-          allow="accelerometer; autoplay; encrypted-media;"
-          height="100%" width="100%"
-          margin="0px"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-        /> */}

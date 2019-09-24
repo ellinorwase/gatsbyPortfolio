@@ -45,15 +45,18 @@ export default () => (
         <img className="phone-pic" src={phone} alt="phone"/>
       <li>
         <h4>Email:</h4>
+        <p>
         <a href="mailto:ellinor.wase@gmail.com">
-        <p>ellinor.wase@gmail.com</p>
-        </a>
+          ellinor.wase@gmail.com</a>
+        </p>
       </li>
       <li>
         <h4>Phone-number:</h4>
+        <p>
         <a href="tel:0763268818">
-        <p>076-326 88 18</p>
+          076-326 88 18
         </a>
+          </p>
       </li>
       </ul>
     </footer>

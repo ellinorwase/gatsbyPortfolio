@@ -17,7 +17,7 @@ const ListLink = props => (
 )
 
 export default ({ children }) => (
-  <div>
+  <div style={{ marginBottom: `0px`}}>
  <Intro/>
 <div className="relative">
   <div className="Head">
@@ -47,8 +47,7 @@ export default ({ children }) => (
       )}
       
     </Spring>
+<Footer />  
 </div>
-    <Footer />
-    
   </div>
 )

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Spring } from "react-spring/renderprops"
 
 export default () => (
-  <Spring from={{ opacity: 0 }} config={{ delay: 1000, duration: 1000 }} to={{ opacity: 1 }}>
+  <Spring from={{ opacity: 0 }} config={{ delay: 4000, duration: 1000 }} to={{ opacity: 1 }}>
     {props => (
       <div style={props} >
         <nav id="slide">
@@ -20,6 +20,8 @@ export default () => (
           </ul>
         </nav>
       </div>
+      
     )}
   </Spring>
+  
 )
