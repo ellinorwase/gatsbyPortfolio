@@ -638,7 +638,7 @@ ul.courses > li {
 }
 
 div.card {
-  background-size: cover;
+  background-size: contain;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -692,7 +692,7 @@ div.card {
     margin-top: 20%;
   }
   a.h-menu.nav-link.nav-link-ltr {
-    display: contents;
+    display: block;
   }
 
   menu {
@@ -734,9 +734,7 @@ div.card {
   ul#navbar.menu > a {
     display: inline-block;
   }
-  ul#navbar.menu{
-    padding: 25%;
-  }
+
   .right {
     display: none;
   }
