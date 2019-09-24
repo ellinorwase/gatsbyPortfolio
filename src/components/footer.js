@@ -6,6 +6,7 @@ import github from "../images/iconmonstr-github-3.svg";
 import gmail from "../images/iconmonstr-gmail-3.svg";
 import phone from "../images/iconmonstr-smartphone-3.svg";
 import {useSpring, animated} from 'react-spring';
+import Menu from "./menu";
 
 
 export default () => (
@@ -13,9 +14,7 @@ export default () => (
     <footer className="footer" id="contact">
     <ul className="footer-menu" style={{textDecoration: `none`}}>
       <div className="footer-m">
-    <Link to="/" className="h-menu nav-link nav-link-ltr">Home</Link>
-  <Link to="/#projects" className="h-menu nav-link nav-link-ltr">Projects</Link>
-  <Link to="/#contact" className="h-menu nav-link nav-link-ltr">Contact</Link>
+      <Menu/>
       </div>
         <div className="logo-pics">
         <a href="https://www.linkedin.com/in/ellinor-vase-38075716b/"

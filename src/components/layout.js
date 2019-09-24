@@ -4,7 +4,7 @@ import Footer from "./footer"
 import Header from "./header"
 import { Spring } from "react-spring/renderprops"
 import Projects from "./projects"
-import Menu from "./menu"
+import Menu from "./headerMenu"
 import Intro from "./intro"
 import Svg from "../components/svg"
 import BoxArea from "../components/box-area";

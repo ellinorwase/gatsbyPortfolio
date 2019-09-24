@@ -48,7 +48,7 @@ body{
 .i4 {
   background-color: #116566;
   right: 0;
-
+  z-index: 1;
   -webkit-animation-name: i4; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
   animation-name: i4;
@@ -344,6 +344,7 @@ a:hover {
   /* background-color: rgb(167, 167, 167); */
   /* background-image: url("../images/footer-background\ \(1\).png"); */
   /* background-size: cover; */
+  background-color: #d1e8e2;
   background-color: #ffcb9a;
   height: 50%;
   margin: 0px;
@@ -684,8 +685,14 @@ div.card {
   a.h-menu.nav-link.nav-link-ltr {
     display: contents;
   }
+
   menu {
     display: inline-block;
+    padding: 10%;
+  }
+  ul.menu>div{
+    display: grid;
+
   }
 
   #card > a > p {
@@ -701,33 +708,26 @@ div.card {
 
   div.PP {
     position: relative;
+    margin-top: -10%;
+    width: 24%;
+    margin-left: 68%;
   }
   div.PP img {
     opacity: 1;
   }
-  /* .profile-pic{
-    display: inline;
-  } */
-  /* img.profile-pic {
-    margin-top: 14%;
-    width: 24%;
-    position: relative;
-    margin-bottom: 0px;
-    margin-left: 70%;
-  } */
+  
   .Head {
     position: relative;
   }
   ul#navbar.menu > a {
     display: inline-block;
   }
+  ul#navbar.menu{
+    padding: 25%;
+  }
   .right {
     display: none;
   }
-  /* ul.courses > li {
-    width: 100%;
-    margin: 5px;
-  } */
   .row {
     height: 100%;
     grid-template-columns: repeat(1, 1fr);
