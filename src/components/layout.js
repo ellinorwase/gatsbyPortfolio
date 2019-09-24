@@ -6,7 +6,7 @@ import { Spring } from "react-spring/renderprops"
 import Projects from "./projects"
 import Menu from "./headerMenu"
 import Intro from "./intro"
-import Svg from "../components/svg"
+import Svg from "./profile"
 import BoxArea from "../components/box-area";
 import Chart from "../components/chart";
 

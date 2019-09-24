@@ -1,6 +1,6 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
-import pussle from "../images/PP-color.png";
+import Profile from "../images/PP-color.png";
 
 export default () => (
 <Spring 
@@ -11,9 +11,9 @@ export default () => (
 {props => (
 <div style={props}>
   <div className="PP">
-  <img className="profile-pic" src={pussle} alt=""/>
+  <img className="profile-pic" src={Profile} alt=""/>
   </div>
-<p style={{marginLeft: `75%`}}>Hover to see me <br/> </p>
+<p style={{marginLeft: `75%`}}>Hover to see me 🤗</p>
 </div>
 )}
      
