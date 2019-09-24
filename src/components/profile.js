@@ -13,7 +13,7 @@ export default () => (
   <div className="PP">
   <img className="profile-pic" src={Profile} alt=""/>
   </div>
-<p style={{marginLeft: `75%`}}>Hover to see me 🤗</p>
+<p style={{marginLeft: `75%`}}>Hover to see me  🔎 </p>
 </div>
 )}
      

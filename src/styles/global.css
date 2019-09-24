@@ -669,6 +669,15 @@ div.card {
   div.Head > div > p {
     display: none;
   }
+  header{
+    margin-top: 10%;
+  }
+  #welcome {
+    font-size: 2em;
+  }
+  body{
+    width: 100%;
+  }
 }
 
 
@@ -693,6 +702,9 @@ div.card {
   ul.menu>div{
     display: grid;
 
+  }
+  ul#navbar.menu{
+    display: grid;
   }
 
   #card > a > p {
