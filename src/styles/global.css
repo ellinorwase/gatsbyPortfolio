@@ -370,11 +370,9 @@ a:hover {
 }
 
 .footer {
-  /* background-color: rgb(167, 167, 167); */
-  /* background-image: url("../images/footer-background\ \(1\).png"); */
-  /* background-size: cover; */
-  background-color: #d1e8e2;
-  background-color: #ffcb9a;
+  background-size: cover;
+  background-image: url("../images/footer-background3.png");
+  object-fit: cover;
   height: 50%;
   margin: 0px;
   padding: 3px;
@@ -408,6 +406,9 @@ footer {
 .footer-contact {
   list-style: none;
   text-align: center;
+}
+.footer-contact>h3{
+  margin-top: 0px;
 }
 
 .footer-contact > li > h4 {
