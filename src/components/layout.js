@@ -16,15 +16,17 @@ const ListLink = props => (
   </li>
 )
 
-export default ({ children }) => (
-  <div>
+export default ({ children }) => {
+  console.warn('I rendered hehe')
+  return (
+    <div>
  <Intro/>
 <div className="relative">
   <div className="Head">
     <Svg/>
-    <Menu/>
   </div>
     <div style={{ margin: `0 auto`, maxWidth: 1000, padding: `0rem 1rem 0 1rem` }}>
+    <Menu/>
       <Header />
     </div>
     <Spring
@@ -50,4 +52,5 @@ export default ({ children }) => (
   </div>
 <Footer />  
 </div>
-)
+  )
+}

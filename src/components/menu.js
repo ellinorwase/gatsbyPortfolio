@@ -1,19 +1,13 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import LinkExtend from './extends/linkExtend';
 
-class Menu extends Component {
+class Menu extends LinkExtend {
   render() {
     return (
       <div style={{display:`contents`}}>
-        <Link to="/" className="h-menu nav-link nav-link-ltr">
-          Home
-        </Link>
-        <Link to="/#projects" className="h-menu nav-link nav-link-ltr">
-          Projects
-        </Link>
-        <Link to="/#contact" className="h-menu nav-link nav-link-ltr">
-          Contact
-        </Link>
+        {this.renderLink('Home', '/')}
+        {this.renderLink('Projects', '/#projects')}
+        {this.renderLink('Contact', '/#contact')}
       </div>
     )
   }

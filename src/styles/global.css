@@ -408,7 +408,7 @@ footer {
   text-align: center;
 }
 .footer-contact>h3{
-  margin-top: 0px;
+  margin-top: 15px;
 }
 
 .footer-contact > li > h4 {
@@ -741,6 +741,7 @@ div.card {
 #card > a > p:hover {
   color: #c7813f;
 }
+
 @media only screen and (max-width: 1073px) {
   div.PP img {
     opacity: 1;

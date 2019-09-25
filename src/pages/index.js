@@ -2,10 +2,11 @@ import React from "react";
 import Layout from "../components/layout";
 
 
-export default () => (
-  <Layout>
+export default () => {
+  console.log('index initialize')
+  return (
+    <Layout>
     <div>
-    {/* <img className="profilePic" src={profilePic} alt="profilePic"/> */}
     <h1 className="header">Welcome to my Portfolio</h1>
     
     <h3>At first i will introduce myself</h3>
@@ -15,4 +16,6 @@ export default () => (
     </div>
     
   </Layout>
-)
+  )
+}
+  

@@ -7,7 +7,9 @@ import {useSpring, animated} from 'react-spring'
 // const profile = useSpring({ x: 100, from: { x: 0 } })
   
   
-  export default () => (
+  export default () => {
+    console.log('HEADER RENDERED')
+    return (
 
       <Spring 
       from={{ opacity: 0}}
@@ -35,4 +37,5 @@ import {useSpring, animated} from 'react-spring'
     
 
 )
+  }
 
