@@ -1,11 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import linkedin from "../images/iconmonstr-linkedin-3.svg";
 import facebook from "../images/iconmonstr-facebook-3.svg";
 import github from "../images/iconmonstr-github-3.svg";
 import gmail from "../images/iconmonstr-gmail-3.svg";
 import phone from "../images/iconmonstr-smartphone-3.svg";
-import {useSpring, animated} from 'react-spring';
 import Menu from "./menu";
 
 

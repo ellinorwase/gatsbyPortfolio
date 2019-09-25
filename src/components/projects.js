@@ -1,12 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Spring } from 'react-spring/renderprops';
 import gitPic from "../images/kizzgit.png"
 import kizz from "../images/kizz.png"
 import adobexd from "../images/adobeXd.png"
 import barabarn from "../images/barabarn.png"
-import check from "../images/check.png"
-import comming from "../images/comming.png"
 import pic from "../images/plugg1.svg"
 
 const bilder =[

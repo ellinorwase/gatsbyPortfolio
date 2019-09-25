@@ -1,10 +1,7 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
-import { useSpring, animated } from "react-spring"
+// import { useSpring, animated } from "react-spring"
 
-// const AnimatedDonut = animated(Donut)
-
-// const round = useSpring({ value: 100, from: { value: 0 } })
 
 export default () => (
   <Spring

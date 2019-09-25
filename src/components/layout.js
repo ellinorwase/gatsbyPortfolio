@@ -17,7 +17,6 @@ const ListLink = props => (
 )
 
 export default ({ children }) => {
-  console.warn('I rendered hehe')
   return (
     <div>
  <Intro/>

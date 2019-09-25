@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 
 
 export default () => {
-  console.log('index initialize')
   return (
     <Layout>
     <div>

@@ -1,14 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Spring } from 'react-spring/renderprops';
 import svg from "../images/profil2.svg"
-import {useSpring, animated} from 'react-spring'
-
-// const profile = useSpring({ x: 100, from: { x: 0 } })
-  
   
   export default () => {
-    console.log('HEADER RENDERED')
     return (
 
       <Spring 
@@ -20,14 +14,10 @@ import {useSpring, animated} from 'react-spring'
 
 
 <header style={{ marginBottom: `10%` }}>
-{/* <Link to="/" style={{ textShadow: `none` }}> */}
   <h3 className="portfoliotext" > Ellinor Vase</h3>
     <img className="profilePic" src={svg} alt="profilePic"/>
   <hr style={{width: `60%`, marginRight:`40%`, color:`blue`}}></hr>
 
-
-{/* <hr style={{width: `80%`, margin:`auto`, color:`blue`}}></hr> */}
-{/* </Link> */}
 
 </header>
      </div>
