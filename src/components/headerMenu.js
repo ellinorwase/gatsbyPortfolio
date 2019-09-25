@@ -11,6 +11,7 @@ export default () => (
           <ul className="menu" style={{ textDecoration: `none` }} id="navbar">
 
           <Meny/>
+          {/* animation: bounce 2.5s ease-out infinite; */}
           </ul>
         </nav>
       </div>

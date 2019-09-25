@@ -7,7 +7,7 @@ html {
   height: 100vh;
   background-attachment: fixed;
 }
-body{
+body {
   margin-bottom: 0px;
 }
 .intro {
@@ -140,7 +140,36 @@ h6 {
   width: 15%;
   margin-bottom: 0px;
   margin-top: 0px;
-  margin-left: 5px;
+  margin-left: 10px;
+  /* animation: svgPic 2.5s ease-out infinite;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: svgPic; */
+}
+/* @keyframes svgPic {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+.hoverToSee{
+  margin-left: 68%;
+  font-family: 'Vibes', cursive;
+  text-align: center;
 }
 
 @keyframes welcome {
@@ -357,10 +386,8 @@ footer {
 
 .footer-menu {
   text-align: center;
-  margin-top: 20px;
   color: #116466;
   text-decoration: none;
-  padding: 10px 30px 0 30px;
   font-size: 22px;
 }
 .footer-menu > li {
@@ -468,19 +495,39 @@ ul#navbar.menu {
 
 .chart {
   margin-bottom: 7%;
+  animation: bounce 2.5s ease-out infinite;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: bounce;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.list-style {
+/* .list-style {
   width: 2%;
   margin-right: 6px;
-}
+} */
 
 ul.courses > li {
   list-style: none;
   margin-bottom: 0px;
   border-style: solid;
   border-color: #ffcb9a;
-  background-color: #d1e8e27e;
+  background-color: #d1e8e223;
   padding: 0.8%;
   width: 100%;
   margin: 5px;
@@ -500,7 +547,6 @@ ul.courses > li {
   height: 95%;
   margin: auto 4% auto 4%;
   border-radius: 10px;
-
 }
 .right-pic:hover {
   box-shadow: 0px 90px 130px -10px #fabc83;
@@ -607,6 +653,37 @@ ul.courses > li {
   margin: 0;
 }
 
+div.projects {
+  animation: projects 2.5s ease-out infinite;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: projects;
+  text-align: center;
+}
+@keyframes projects {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* 
+@keyframes bounce-3 {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-100px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+} */
+
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -670,23 +747,22 @@ div.card {
   div.Head > div > p {
     display: none;
   }
-  header{
+  header {
     margin-top: 10%;
   }
   #welcome {
     font-size: 2em;
   }
-  body{
+  body {
     width: 100%;
   }
-  div.card{
+  div.card {
     background-size: cover;
   }
-  #card{
+  #card {
     height: 35vh;
   }
 }
-
 
 @media only screen and (max-width: 700px) {
   div.Head > div > p {
@@ -706,11 +782,10 @@ div.card {
     display: inline-block;
     padding: 10%;
   }
-  ul.menu>div{
+  ul.menu > div {
     display: grid;
-
   }
-  ul#navbar.menu{
+  ul#navbar.menu {
     display: grid;
   }
 
@@ -733,7 +808,7 @@ div.card {
   div.PP img {
     opacity: 1;
   }
-  
+
   .Head {
     position: relative;
   }
@@ -754,10 +829,10 @@ div.card {
   body {
     background-attachment: fixed;
   }
-  .list-style{
-    width: 6%
-  }
-  div.card{
+  /* .list-style {
+    width: 6%;
+  } */
+  div.card {
     background-size: contain;
   }
 }

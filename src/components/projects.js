@@ -33,7 +33,7 @@ const bilder =[
 ]
 
 export default () => (
-    <div id="projects">
+    // <div id="projects">
 <Spring 
         from={{ opacity: 0}}
         to={{ opacity: 1}}>
@@ -41,44 +41,49 @@ export default () => (
 <div style={props}>
 
   <hr></hr> 
+  <div className="projects">
+    <h1>Courses</h1>
+  </div>
   <h3> As said before, I study to become a Frontend Developer. <br /> An education that contains these following courses:</h3>
   <div className="row">
   
   <div id="courses">
   <ul className="courses">
-    <li><img className="list-style" src={check} alt=""/>
-      Introduction and project methodology</li>
-    <li><img className="list-style" src={check} alt=""/>
-    Frontend project</li>
-    <li><img className="list-style" src={check} alt=""/>
-    CMS tools, backend and interaction with databases</li>
-    <li><img className="list-style" src={check} alt=""/>
-    Graphics Tools</li>
-    <li><img className="list-style" src={check} alt=""/>
-    HTML and CSS</li>
-    <li><img className="list-style" src={check} alt=""/>
-    Javascript 1</li>
-    <li><img className="list-style" src={check} alt=""/>
-    Javascript 2</li>
-    <li><img className="list-style" src={check} alt=""/>
-    Javascript 3</li>
-    <li><img className="list-style" src={comming} alt=""/>
-    Javascript 4</li>
-    <li><img className="list-style" src={comming} alt=""/>
-    Master's thesis</li>
-    <li><img className="list-style" src={comming} alt=""/>
-    Internship 1 (10 Weeks)</li>
-    <li><img className="list-style" src={comming} alt=""/>
-    Internship 2 (12 weeks)</li>
+    <li>
+    ✔️ Introduction and project methodology</li>
+    <li>
+    ✔️ Frontend project</li>
+    <li>
+    ✔️ CMS tools, backend and interaction with databases</li>
+    <li>
+    ✔️ Graphics Tools</li>
+    <li>
+    ✔️ HTML and CSS</li>
+    <li>
+    ✔️ Javascript 1</li>
+    <li>
+    ✔️ Javascript 2</li>
+    <li>
+    ✔️ Javascript 3</li>
+    <li>
+    🔜 Javascript 4</li>
+    <li>
+    🔜 Master's thesis</li>
+    <li>
+    🔜 Internship 1 (10 Weeks)</li>
+    <li>
+    🔜 Internship 2 (12 weeks)</li>
   </ul>
   </div>
   <div className="right">
   <img className="right-pic" src={pic} alt=""/>
   </div>
   </div>
+  <div id="projects">
   <hr></hr> 
-
+<div className="projects">
 <h1>My Projects</h1>
+</div>
       <p>
           Here you can find some of the project that I have done.
       </p>
@@ -96,9 +101,9 @@ export default () => (
         })}
 </div>
       
+      </div>
       )}
     </Spring>
-      </div>
 )
 
 
