@@ -34,6 +34,7 @@ body {
   animation-name: i2;
   animation-duration: 8s;
   animation-fill-mode: forwards;
+  z-index: 2;
 }
 
 .i3 {
@@ -45,6 +46,7 @@ body {
   animation-name: i3;
   animation-duration: 8s;
   animation-fill-mode: forwards;
+  z-index: 2;
 }
 .i4 {
   background-color: #ffffff;
