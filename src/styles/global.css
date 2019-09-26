@@ -746,6 +746,10 @@ footer > ul > li > p {
     display: inline-block;
     padding: 10%;
   }
+  a.h-menu.nav-link.nav-link-ltr {
+
+    padding: 5px;
+}
   ul.menu > div {
     display: grid;
   }
