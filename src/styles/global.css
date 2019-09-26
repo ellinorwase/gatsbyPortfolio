@@ -716,6 +716,7 @@ footer > ul > li > p {
   body {
     background-attachment: fixed;
     background-position: sticky;
+    background-position: fixed;
   }
   div.Head > div > p {
     display: none;
