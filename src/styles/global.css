@@ -718,6 +718,11 @@ footer > ul > li > p {
     background-position: sticky;
     background-position: fixed;
   }
+  html{
+    background-attachment: fixed;
+    background-position: sticky;
+    background-position: fixed;
+  }
   div.Head > div > p {
     display: none;
   }
