@@ -15,7 +15,6 @@ export default () => (
         <div className="i1 intro">
       </div>
 
-      <div>
       <div className="i2 intro">
            <h6 id="welcome" className="wel">WEL</h6>      
       </div>
@@ -23,7 +22,6 @@ export default () => (
 
       <div className="i3 intro">
       <h6 id="welcome" className="come">COME</h6>      
-      </div>
       </div>
 
       <div className="i4 intro">

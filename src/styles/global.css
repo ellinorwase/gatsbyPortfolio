@@ -750,7 +750,8 @@ footer > ul > li > p {
     width: auto;
   }
   div#card {
-    height: 40vh;
+    width: 34vh;
+    height: 26vh;
   }
 
   div.PP {
