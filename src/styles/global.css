@@ -719,8 +719,9 @@ footer > ul > li > p {
     background-position: fixed;
   } */
   html{
-    background-attachment: fixed;
-    scroll-behavior: smooth;
+    background-image: url("../images/10730.jpg")no-repeat center center fixed;
+    /* background-attachment: fixed;
+    scroll-behavior: smooth; */
 
   }
   div.Head > div > p {
