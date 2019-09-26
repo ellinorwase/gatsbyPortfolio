@@ -713,15 +713,15 @@ footer > ul > li > p {
 }
 
 @media only screen and (max-width: 700px) {
-  body {
+  /* body {
     background-attachment: fixed;
     background-position: sticky;
     background-position: fixed;
-  }
+  } */
   html{
     background-attachment: fixed;
-    background-position: sticky;
-    background-position: fixed;
+    scroll-behavior: smooth;
+
   }
   div.Head > div > p {
     display: none;
