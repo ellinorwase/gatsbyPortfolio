@@ -10,7 +10,7 @@ body {
 }
 .intro {
   height: 100%;
-  width: 25vw;
+  width: 25.2vw;
   position: fixed;
   top: 0;
   z-index: -1;
@@ -138,6 +138,7 @@ h6 {
 
 .wel {
   text-align: right;
+  /* margin-left: 40px; */
 }
 
 .come {
