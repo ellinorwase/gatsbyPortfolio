@@ -17,7 +17,8 @@ body {
 }
 
 .i1 {
-  background-color: #116566;
+  background-color: #ffffff;
+  background-color: #000000;
   z-index: 1;
   -webkit-animation-name: i1; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
@@ -26,7 +27,8 @@ body {
   animation-fill-mode: forwards;
 }
 .i2 {
-  background-color: #116566c4;
+  background-color: #ffffff;
+  background-color: #000000;
   -webkit-animation-name: i2; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
   animation-name: i2;
@@ -35,7 +37,8 @@ body {
 }
 
 .i3 {
-  background-color: #116566c4;
+  background-color: #ffffff;
+  background-color: #000000;
   right: 0;
   -webkit-animation-name: i3; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
@@ -44,7 +47,8 @@ body {
   animation-fill-mode: forwards;
 }
 .i4 {
-  background-color: #116566;
+  background-color: #ffffff;
+  background-color: #000000;
   right: 0;
   z-index: 1;
   -webkit-animation-name: i4; /* Safari 4.0 - 8.0 */
@@ -72,28 +76,34 @@ body {
   0% {
     transform: translate3d(100%, 0, 0);
     top: 0px;
+    opacity: 1;
   }
   30% {
     transform: translate3d(100%, 0, 0);
     top: 0px;
+    opacity: 1;
   }
   100% {
     transform: translate3d(-100%, 0, 0);
     top: 0px;
+    opacity: 0;
   }
 }
 @keyframes i3 {
   0% {
     transform: translate3d(-100%, 0, 0);
     top: 0px;
+    opacity: 1;
   }
   30% {
     transform: translate3d(-100%, 0, 0);
     top: 0px;
+    opacity: 1;
   }
   100% {
     transform: translate3d(100%, 0, 0);
     top: 0px;
+    opacity: 0;
   }
 }
 @keyframes i4 {
@@ -226,7 +236,7 @@ div.PP {
   margin-top: 2%;
   position: absolute;
   border: solid #2c3531;
-  border-width: 6px 6px 6px 6px;
+  border-width: 4px 4px 4px 4px;
   width: 17%;
   height: auto;
 }
@@ -326,6 +336,17 @@ a:hover {
     left: -50px;
     top: 0px;
   }
+}
+
+.info-job {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  border: 2px solid #116466;
+  margin:auto;
+}
+.info-job>p {
+  margin: 10px;
 }
 
 .chart {
@@ -677,6 +698,10 @@ footer > ul > li > p {
   }
   #card {
     height: 35vh;
+  }
+  .info-job {
+    display: block;
+
   }
 }
 

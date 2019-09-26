@@ -10,7 +10,7 @@ export default () => {
     
     <h3>At first i will introduce myself</h3>
     <p>
-      As you've probably already have seen, from the big heading above, my name is Ellinor Vase. I am a 23 year old Developer-to-be, on my last year studying to become an efficient Frontend Developer. 
+      As you've probably already have seen, from the big heading above, my name is Ellinor Vase and I live at Gullmarsplan in Stockholm. I am a 24 year old Developer-to-be, on my last year studying to become an efficient Frontend Developer at Nackademin in Solna. 
     </p>
     </div>
     

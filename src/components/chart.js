@@ -1,19 +1,22 @@
 import React from "react"
 import { Doughnut } from "react-chartjs-2"
 
-
 export default () => (
-
-//  work 
+  // work
+<div>
     <div className="chart">
       <Doughnut
         data={{
-          labels: ["Karolinska University Hospital", "SF-bio", "Preschool teacher"],
+          labels: [
+            "Karolinska University Hospital",
+            "Cinema employee",
+            "Preschool teacher",
+          ],
           datasets: [
             {
               label: "gender",
               data: [1, 0.5, 4],
-              backgroundColor: ["#D1E8E2","#2C3531", "#D9B08C"],
+              backgroundColor: ["#D1E8E2", "#2C3531", "rgb(156, 128, 104)"],
             },
           ],
         }}
@@ -24,6 +27,22 @@ export default () => (
             fontSize: 30,
           },
         }}
-      />
+        />
     </div>
+    <div className="info-job">
+    <p style={{ color: `rgb(156, 128, 104)` }}>
+      I worked for 4 years at a Preschool called Herkules and had responsibility
+      in a children's group. Since the start of the education I have remained as
+      a substitute.
+    </p>
+    <p style={{ color: `rgb(155, 162, 160)` }}>
+      Assistant at Astrid Lindgren Children's Hospital, emergency department.
+      Responsibility for disinfecting rooms, refilling medicines, etc.
+    </p>
+    <p style={{ color: `#2C3531` }}>
+      What I did at SF-Bio was to work at the cash register, replenish goods and
+      service.
+    </p>
+    </div>
+  </div>
 )
