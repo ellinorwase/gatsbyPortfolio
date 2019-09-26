@@ -751,7 +751,7 @@ footer > ul > li > p {
   }
   ul#navbar.menu {
     display: flex;
-    margin-left: 0px;
+    margin-left: -10px;
   }
   .nav-link {
     margin: 0px 12px;
@@ -764,7 +764,9 @@ footer > ul > li > p {
   ul#navbar.menu>a {
     margin: 0px;
   }
-
+  #slide{
+    left: -300px;
+  }
   #card > a > p {
     font-size: 20px;
   }
@@ -777,10 +779,10 @@ footer > ul > li > p {
   }
 
   div.PP {
-    position: relative;
-    margin-top: -10%;
+    position: absolute;
+    margin-top: -17%;
     width: 24%;
-    margin-left: 68%;
+    margin-left: 72%;
   }
   div.PP img {
     opacity: 1;

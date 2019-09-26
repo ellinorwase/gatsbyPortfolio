@@ -24,7 +24,7 @@ export default ({ children }) => {
   <div className="Head">
     <Svg/>
   </div>
-    <div style={{ margin: `0 auto`, maxWidth: 1000, padding: `0rem 1rem 0 1rem` }}>
+    <div style={{ margin: `0 auto`, maxWidth: 1000, padding: `1rem 1rem 0 1rem` }}>
     <Menu/>
       <Header />
     </div>
