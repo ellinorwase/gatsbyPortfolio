@@ -10,10 +10,14 @@ body {
 }
 .intro {
   height: 100%;
-  width: 25.2vw;
+  width: 25vw;
   position: fixed;
   top: 0;
   z-index: -1;
+}
+.intro-s{
+  width: 26vw;
+
 }
 
 .i1 {

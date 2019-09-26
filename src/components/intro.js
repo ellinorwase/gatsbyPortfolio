@@ -12,7 +12,7 @@ export default () => (
     {props => (
       <div style={props}>
  
-        <div className="i1 intro">
+        <div className="i1 intro intro-s">
       </div>
 
       <div className="i2 intro">
@@ -24,7 +24,7 @@ export default () => (
       <h6 id="welcome" className="come">COME</h6>      
       </div>
 
-      <div className="i4 intro">
+      <div className="i4 intro intro-s">
       </div>
       </div>
     )}
