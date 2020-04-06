@@ -16,12 +16,11 @@ export default () => (
       </div>
 
       <div className="i2 intro">
-           <h6 id="welcome" className="wel">WEL</h6>      
+           {/* <h6 id="welcome" className="wel">WEL</h6>       */}
       </div>
-      {/* <h6 id="welcome">WELCOME</h6>       */}
 
       <div className="i3 intro">
-      <h6 id="welcome" className="come">COME</h6>      
+      {/* <h6 id="welcome" className="come">COME</h6>       */}
       </div>
 
       <div className="i4 intro intro-s">

@@ -21,22 +21,22 @@ body {
 }
 
 .i1 {
-  background-color: #ffffff;
   background-color: #000000;
+  background-color: #222831;
   z-index: 1;
   -webkit-animation-name: i1; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
   animation-name: i1;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 .i2 {
-  background-color: #ffffff;
   background-color: #000000;
+  background-color: #222831;
   -webkit-animation-name: i2; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
   animation-name: i2;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   z-index: 2;
 }
@@ -44,23 +44,25 @@ body {
 .i3 {
   background-color: #ffffff;
   background-color: #000000;
+  background-color: #222831;
   right: 0;
   -webkit-animation-name: i3; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
   animation-name: i3;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   z-index: 2;
 }
 .i4 {
   background-color: #ffffff;
   background-color: #000000;
+  background-color: #222831;
   right: 0;
   z-index: 1;
   -webkit-animation-name: i4; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
   animation-name: i4;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -184,16 +186,14 @@ h6 {
 /* Menu-top */
 
 .profilePic {
-  width: 15%;
+  width: 50%;
   margin-bottom: 0px;
-  margin-top: 0px;
-  margin-left: 10px;
 }
 
 .hoverToSee {
-  margin-left: 68%;
+  margin-left: 75%;
   font-family: "Vibes", cursive;
-  text-align: center;
+  position: absolute;
 }
 
 @keyframes welcome {
@@ -293,6 +293,7 @@ a:hover {
   margin: 0px 20px;
   display: inline-block;
   position: relative;
+  font-size: 25px;
 }
 
 .nav-link::before {
@@ -395,9 +396,9 @@ ul#navbar.menu {
 ul.courses > li {
   list-style: none;
   margin-bottom: 0px;
-  border-style: solid;
-  border-color: #ffcb9a;
-  background-color: #d1e8e223;
+  border: 2px solid #116466;
+  border-style: none none solid solid;
+  /* background-color: #d1e8e223; */
   padding: 0.8%;
   width: 100%;
   margin: 5px;
@@ -688,9 +689,9 @@ footer > ul > li > p {
   body {
     width: 100%;
   }
-  header {
+  /* header {
     margin-top: 10%;
-  }
+  } */
   #welcome {
     font-size: 2em;
   }
@@ -728,9 +729,9 @@ footer > ul > li > p {
   .profilePic {
     display: none;
   }
-  div.relative {
-    margin-top: 20%;
-  }
+  /* div.relative {
+    padding-top: 20%;
+  } */
   a.h-menu.nav-link.nav-link-ltr {
     display: block;
   }
@@ -754,8 +755,9 @@ footer > ul > li > p {
     display: grid;
   }
   ul#navbar.menu {
-    display: flex;
-    margin-left: -10px;
+    /* display: flex;
+    margin-left: -10px; */
+    display: none;
   }
   .nav-link {
     margin: 0px 12px;
@@ -784,10 +786,11 @@ footer > ul > li > p {
 
   div.PP {
     position: absolute;
-    margin-top: -17%;
-    width: 24%;
-    margin-left: 72%;
+    width: 68%;
+    margin-left: 15%;
+    margin-top: 13%;
   }
+
   div.PP img {
     opacity: 1;
   }
@@ -800,7 +803,11 @@ footer > ul > li > p {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  div.card {
-    background-size: contain;
+  .footer-m{
+    display: inline-flex;
   }
+
+  /* div.card {
+    background-size: contain;
+  } */
 }

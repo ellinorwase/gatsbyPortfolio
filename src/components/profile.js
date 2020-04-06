@@ -1,23 +1,20 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
-import Profile from "../images/pp-color.png";
+import Profile from "../images/pp-color.png"
 
 export default () => (
-<Spring 
-        from={{ opacity: 0}}
-        to={{ opacity: 1}}
-        config={{ delay: 2000, duration: 2000 }} 
-        >
-{props => (
-<div style={props}>
-  <div className="PP">
-  <img className="profile-pic" src={Profile} alt=""/>
-  </div>
-<p className="hoverToSee">Hover to see me  🔎 </p>
-</div>
-)}
-     
-</Spring>
-
-
+  <Spring
+    from={{ opacity: 0 }}
+    to={{ opacity: 1 }}
+    config={{ delay: 2000, duration: 2000 }}
+  >
+    {props => (
+      <div style={props}>
+        <div className="PP">
+          <img className="profile-pic" src={Profile} alt="" />
+        </div>
+        <p className="hoverToSee">Hover to see me 🔎 </p>
+      </div>
+    )}
+  </Spring>
 )
