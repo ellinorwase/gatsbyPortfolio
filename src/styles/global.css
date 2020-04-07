@@ -728,12 +728,13 @@ footer > ul > li > p {
 }
 
 @media only screen and (max-width: 800px) {
-  html{
+  /* html{
     background-image: url("../images/10730.jpg")no-repeat center center fixed;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     scroll-behavior: smooth;
 
-  }
+  } */
   div.Head > div > p {
     display: none;
   }
