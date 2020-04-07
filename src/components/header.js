@@ -11,7 +11,7 @@ export default () => {
     >
       {props => (
         <div style={props}>
-          <header style={{ height: '65vh', position: 'relative'}}>
+          <header className="profileHeader">
             <div className="profileContainer">
               <img className="profilePic" src={svg} alt="profilePic" />
               <h3 className="portfoliotext"> Ellinor Vase</h3>

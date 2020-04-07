@@ -272,6 +272,11 @@ div.PP:hover img {
   bottom: 0;
 }
 
+.profileHeader{
+  height: 100vh;
+  position: relative;
+}
+
 div > header > ul.menu {
   list-style: none;
   float: right;
@@ -737,9 +742,9 @@ footer > ul > li > p {
     display: none;
   }
   
-  /* .profileContainer{
-    bottom: 30%;
-  } */
+  .profileHeader{
+    height: 65vh;
+  }
   /* div.relative {
     padding-top: 20%;
   } */
