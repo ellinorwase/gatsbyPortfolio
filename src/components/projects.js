@@ -51,6 +51,9 @@ export default () => (
           education that contains these following courses:
         </h3>
         <div className="row">
+          <div className="right">
+            <img className="right-pic" src={pic} alt="" />
+          </div>
           <div id="courses">
             <ul className="courses">
               <li>✔️ Introduction and project methodology</li>
@@ -66,9 +69,6 @@ export default () => (
               <li>✔️ Internship 1 (10 Weeks)</li>
               <li>🔜 Internship 2 (12 weeks)</li>
             </ul>
-          </div>
-          <div className="right">
-            <img className="right-pic" src={pic} alt="" />
           </div>
         </div>
         <div id="projects">

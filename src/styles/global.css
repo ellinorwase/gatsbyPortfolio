@@ -1,9 +1,9 @@
 html {
-  background-image: url("../images/portfolio-bc2.svg");
+  background-image: url("../images/portfolio-bc2.desc.svg");
   z-index: -1;
   scroll-behavior: smooth;
   height: 100vh;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
 }
 body {
@@ -163,6 +163,7 @@ h6 {
   animation: slide 0.5s forwards;
   animation-delay: 7s;
   position: fixed;
+  z-index: 10;
 }
 
 @-webkit-keyframes slide {
@@ -735,6 +736,7 @@ footer > ul > li > p {
     background-repeat: no-repeat; */
     background-repeat: repeat;
     scroll-behavior: smooth;
+    background-position: left;
 
   }
   div.Head > div > p {
