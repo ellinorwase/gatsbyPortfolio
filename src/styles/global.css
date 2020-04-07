@@ -23,6 +23,7 @@ body {
 .i1 {
   background-color: #000000;
   background-color: #222831;
+  background-color: #ffffff;
   z-index: 1;
   -webkit-animation-name: i1; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
@@ -33,6 +34,7 @@ body {
 .i2 {
   background-color: #000000;
   background-color: #222831;
+  background-color: #ffffff;
   -webkit-animation-name: i2; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
   animation-name: i2;
@@ -42,9 +44,9 @@ body {
 }
 
 .i3 {
-  background-color: #ffffff;
   background-color: #000000;
   background-color: #222831;
+  background-color: #ffffff;
   right: 0;
   -webkit-animation-name: i3; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
@@ -54,9 +56,9 @@ body {
   z-index: 2;
 }
 .i4 {
-  background-color: #ffffff;
   background-color: #000000;
   background-color: #222831;
+  background-color: #ffffff;
   right: 0;
   z-index: 1;
   -webkit-animation-name: i4; /* Safari 4.0 - 8.0 */
@@ -154,7 +156,7 @@ h6 {
 }
 /* Menu-top */
 #slide {
-  left: -100px;
+  left: -150px;
   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 1.5s;
   animation: slide 0.5s forwards;
@@ -263,6 +265,11 @@ div.PP:hover img {
   transition: opacity 3s ease-in-out;
   -moz-transition: opacity 3s ease-in-out;
   -webkit-transition: opacity 3s ease-in-out;
+}
+
+.profileContainer{
+  position: absolute;
+  bottom: 0;
 }
 
 div > header > ul.menu {
@@ -419,10 +426,10 @@ ul.courses > li {
   margin: auto 4% auto 4%;
   border-radius: 10px;
 }
-.right-pic:hover {
-  box-shadow: 0px 90px 130px -10px #fabc83;
-  background-color: #ffcb9a;
-}
+/* .right-pic:hover {
+  box-shadow: 90px #ffffff69;
+  background-color: #ffffff71;
+} */
 
 .relative {
   position: relative;
@@ -729,6 +736,10 @@ footer > ul > li > p {
   .profilePic {
     display: none;
   }
+  
+  /* .profileContainer{
+    bottom: 30%;
+  } */
   /* div.relative {
     padding-top: 20%;
   } */
@@ -788,7 +799,7 @@ footer > ul > li > p {
     position: absolute;
     width: 68%;
     margin-left: 15%;
-    margin-top: 13%;
+    margin-top: 15%;
   }
 
   div.PP img {

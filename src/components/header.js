@@ -11,11 +11,11 @@ export default () => {
     >
       {props => (
         <div style={props}>
-          <header style={{ height: '100vh', position: 'relative'}}>
-            <div style={{ bottom: '0', position: 'absolute'}}>
-            <img className="profilePic" src={svg} alt="profilePic" />
-            <h3 className="portfoliotext"> Ellinor Vase</h3>
-            <hr style={{ width: `85%`, marginRight: `40%` }}></hr>
+          <header style={{ height: '65vh', position: 'relative'}}>
+            <div className="profileContainer">
+              <img className="profilePic" src={svg} alt="profilePic" />
+              <h3 className="portfoliotext"> Ellinor Vase</h3>
+              <hr style={{ width: `85%`, marginRight: `40%` }}></hr>
             </div>
           </header>
         </div>

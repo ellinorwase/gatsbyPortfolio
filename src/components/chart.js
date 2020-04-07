@@ -16,7 +16,7 @@ export default () => (
             {
               label: "gender",
               data: [1, 0.5, 4],
-              backgroundColor: ["#D1E8E2", "#2C3531", "rgb(156, 128, 104)"],
+              backgroundColor: ["#300b3f", "#2C3531", "#116466"],
             },
           ],
         }}
@@ -30,12 +30,12 @@ export default () => (
         />
     </div>
     <div className="info-job">
-    <p style={{ color: `rgb(156, 128, 104)` }}>
+    <p style={{ color: `#116466` }}>
       I worked for 4 years at a Preschool called Herkules and had responsibility
       in a children's group. Since the start of the education I have remained as
       a substitute.
     </p>
-    <p style={{ color: `rgb(155, 162, 160)` }}>
+    <p style={{ color: `#300b3f` }}>
       Assistant at Astrid Lindgren Children's Hospital, emergency department.
       Responsibility for disinfecting rooms, refilling medicines, etc.
     </p>
