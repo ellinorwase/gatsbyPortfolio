@@ -730,7 +730,7 @@ footer > ul > li > p {
 
 @media only screen and (max-width: 800px) {
   html{
-    background-image: url("../images/portfolio-bc2.svg");
+    background-image: url("../images/portfolio-bc-mobile2.svg");
     /* background-attachment: fixed;
     background-repeat: no-repeat; */
     background-repeat: repeat;
