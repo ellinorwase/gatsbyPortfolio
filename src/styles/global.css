@@ -435,14 +435,11 @@ ul.courses > li {
   margin: auto 4% auto 4%;
   border-radius: 10px;
 }
-/* .right-pic:hover {
-  box-shadow: 90px #ffffff69;
-  background-color: #ffffff71;
-} */
 
 .relative {
   position: relative;
   margin-bottom: 0px;
+  padding-bottom: 80px;
 }
 .animation-area {
   position: absolute;
@@ -482,7 +479,7 @@ div.card {
 }
 
 #card:hover {
-  box-shadow: 0px 90px 130px -10px rgba(0, 0, 0, 0.555);
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 #card > a > p {
@@ -538,7 +535,7 @@ div.projects {
 
 .footer {
   background-size: cover;
-  background-image: url("../images/footer-background3.png");
+  background-image: url("../images/footer-pic.svg");
   object-fit: cover;
   height: 50%;
   margin: 0px;
@@ -547,6 +544,10 @@ div.projects {
 }
 footer {
   position: relative;
+}
+
+.footer-m{
+  margin-top: 16px;
 }
 
 .footer-menu {
@@ -841,6 +842,10 @@ footer > ul > li > p {
   .row {
     height: 100%;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer{
+    background-position: bottom;
   }
 
   .footer-m{
