@@ -1,0 +1,140 @@
+$color-white: #ffffff;
+
+.intro {
+  height: 100%;
+  width: 25vw;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.intro-s {
+  width: 26vw;
+}
+
+.i1 {
+  background-color: $color-white;
+  z-index: 1;
+  -webkit-animation-name: i1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  animation-name: i1;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+.i2 {
+  background-color: $color-white;
+  -webkit-animation-name: i2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  animation-name: i2;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.i3 {
+  background-color: $color-white;
+  right: 0;
+  -webkit-animation-name: i3; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  animation-name: i3;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+.i4 {
+  background-color: $color-white;
+  right: 0;
+  z-index: 1;
+  -webkit-animation-name: i4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  animation-name: i4;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes i1 {
+  0% {
+    transform: translate3d(0%, 0, 0);
+    top: 0px;
+  }
+  50% {
+    transform: translate3d(0%, 0, 0);
+    top: 0px;
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    top: 0px;
+  }
+}
+@keyframes i2 {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    top: 0px;
+    opacity: 1;
+  }
+  30% {
+    transform: translate3d(100%, 0, 0);
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    top: 0px;
+    opacity: 0;
+  }
+}
+@keyframes i3 {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    top: 0px;
+    opacity: 1;
+  }
+  30% {
+    transform: translate3d(-100%, 0, 0);
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+    top: 0px;
+    opacity: 0;
+  }
+}
+@keyframes i4 {
+  0% {
+    transform: translate3d(0%, 0, 0);
+    top: 0px;
+  }
+  50% {
+    transform: translate3d(0%, 0, 0);
+    top: 0px;
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+    top: 0px;
+  }
+}
+
+// h6 {
+//   text-align: center;
+//   color: white;
+//   -webkit-animation-name: welcome; /* Safari 4.0 - 8.0 */
+//   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+//   animation-name: welcome;
+//   animation-duration: 4s;
+// }
+// #welcome {
+//   font-size: 5em;
+//   margin-top: 60%;
+//   font-family: serif;
+//   z-index: 10;
+// }
+
+// .wel {
+//   text-align: right;
+//   /* margin-left: 40px; */
+// }
+
+// .come {
+//   text-align: left;
+// }

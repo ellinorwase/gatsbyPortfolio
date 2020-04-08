@@ -4,14 +4,10 @@ import facebook from "../images/iconmonstr-facebook-3.svg"
 import github from "../images/iconmonstr-github-3.svg"
 import gmail from "../images/iconmonstr-gmail-3.svg"
 import phone from "../images/iconmonstr-smartphone-3.svg"
-import Menu from "./menu"
 
 export default () => (
   <footer className="footer" id="contact">
     <ul className="footer-menu" style={{ textDecoration: `none` }}>
-      <div className="footer-m">
-        <Menu />
-      </div>
       <div className="logo-pics">
         <a
           href="https://www.linkedin.com/in/ellinor-vase-38075716b/"

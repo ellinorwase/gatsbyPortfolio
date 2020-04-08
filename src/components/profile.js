@@ -13,7 +13,7 @@ export default () => (
         <div className="PP">
           <img className="profile-pic" src={Profile} alt="" />
         </div>
-        <p className="hoverToSee">Hover to see me 🔎 </p>
+        <p className="hoverToSee">🔎 </p>
       </div>
     )}
   </Spring>

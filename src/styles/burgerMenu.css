@@ -17,10 +17,7 @@ input {
     display: block;
     position: relative;
     top: 25px;
-    /* left: 50px; */
-
     z-index: 10;
-
     -webkit-user-select: none;
     user-select: none;
   }
@@ -47,12 +44,9 @@ input {
     position: absolute;
     top: -7px;
     left: -5px;
-
     cursor: pointer;
-
     opacity: 0;
     z-index: 2;
-
     -webkit-touch-callout: none;
   }
 
@@ -106,8 +100,6 @@ input {
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    /* transform: translate(-100%, 0); */
-
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 

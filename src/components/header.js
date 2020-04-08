@@ -15,7 +15,7 @@ export default () => {
             <div className="profileContainer">
               <img className="profilePic" src={svg} alt="profilePic" />
               <h3 className="portfoliotext"> Ellinor Vase</h3>
-              <hr style={{ width: `85%`, marginRight: `40%` }}></hr>
+              <hr className="hr-underline"></hr>
             </div>
           </header>
         </div>

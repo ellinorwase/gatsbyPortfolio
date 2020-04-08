@@ -14,18 +14,3 @@ class Menu extends LinkExtend {
 }
 
 export default Menu;
-
-// <ul className="menu">
-// <li>
-//   <a href="#start">Start</a>
-// </li>
-// <li>
-//   <a href="#startInfo">Information</a>
-// </li>
-// <li>
-//   <a href="#product">Produkt</a>
-// </li>
-// <li>
-//   <a href="#contact">Kontakt</a>
-// </li>
-// </ul>

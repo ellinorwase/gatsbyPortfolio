@@ -32,6 +32,9 @@ module.exports = {
             trackingId: "UA-146676054-1"
           }
         },
+        //SASS
+        `gatsby-plugin-sass`,
+
         // SVG-pics
         // {
         //   resolve: "gatsby-plugin-react-svg",

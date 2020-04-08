@@ -1,5 +1,6 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
+import "../styles/intro.scss"
 // import { useSpring, animated } from "react-spring"
 
 
