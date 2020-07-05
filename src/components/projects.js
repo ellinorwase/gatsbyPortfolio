@@ -67,7 +67,7 @@ export default () => (
               <li>✔️ Javascript 4</li>
               <li>✔️ Master's thesis</li>
               <li>✔️ Internship 1 (10 Weeks)</li>
-              <li>🔜 Internship 2 (12 weeks)</li>
+              <li>✔️ Internship 2 (12 weeks)</li>
             </ul>
           </div>
         </div>
