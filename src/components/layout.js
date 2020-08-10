@@ -1,15 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
-import Footer from "./footer"
-import Header from "./header"
 import { Spring } from "react-spring/renderprops"
-import Projects from "./projects"
-import Menu from "./headerMenu"
-import Intro from "./intro"
-import Svg from "./profile"
-import BoxArea from "../components/box-area"
-import Chart from "../components/chart"
 import BurgerMenu from "../components/burgerMenu"
+import Intro from "./intro"
+import Header from "./header"
+import Menu from "./headerMenu"
+import Svg from "./profile"
+import Chart from "../components/chart"
+import Projects from "./projects"
+import Diploma from "./diploma"
+import BoxArea from "../components/box-area"
+import Footer from "./footer"
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -48,6 +49,7 @@ export default ({ children }) => {
                 {children}
                 <Chart />
                 <Projects />
+                <Diploma />
                 <BoxArea />
               </div>
             </div>
