@@ -1,12 +1,13 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
-import gitPic from "../images/kizzgit.png"
-import gitEx from "../images/gitEx.png"
 
 import kizz from "../images/kizz.png"
 import adobexd from "../images/adobeXd.png"
 import barabarn from "../images/barabarn.png"
 import pic from "../images/plugg1.svg"
+import gitPic from "../images/kizzgit.png"
+import gitEx from "../images/gitEx.png"
+import repex from "../images/repex-website.png"
 
 const bilder = [
   {
@@ -34,6 +35,11 @@ const bilder = [
     text: "Git and Git-Quiz",
     link: "https://ellinorwase.github.io/how-to-git/",
   },
+  {
+    img: repex,
+    text: "Repex",
+    link: "https://www.repexlina.com/",
+  },
 ]
 
 export default () => (
@@ -47,8 +53,8 @@ export default () => (
         </div>
         <h3>
           {" "}
-          As said before, I study to become a Frontend Developer. <br /> An
-          education that contains these following courses:
+          As said before, I studied and are now a fully educated Frontend Developer.<br /> An
+          education containing these following courses:
         </h3>
         <div className="row">
           <div className="right">
@@ -77,7 +83,7 @@ export default () => (
             <h1>My Projects</h1>
           </div>
           <p>Here you can find some of the project that I have done.</p>
-          <h3>Websites:</h3>
+          {/* <h3>Websites:</h3> */}
           <div className="flex-root">
             {bilder.map((object, index) => {
               return (

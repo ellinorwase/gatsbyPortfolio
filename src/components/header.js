@@ -1,6 +1,6 @@
 import React from "react"
 import { Spring } from "react-spring/renderprops"
-import svg from "../images/profil2.svg"
+import svg from "../images/profil.svg"
 
 export default () => {
   return (

@@ -230,8 +230,8 @@ a:hover {
 
 .info-job {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 6px;
   border: 2px solid $color-green-blue;
   border: 2px solid $color-dark-grey;
   margin: auto;
