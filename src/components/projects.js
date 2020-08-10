@@ -82,7 +82,7 @@ export default () => (
           <div className="projects">
             <h1>My Projects</h1>
           </div>
-          <p>Here you can find some of the project that I have done.</p>
+          <p>Here you can find some of the projects that I have created.</p>
           {/* <h3>Websites:</h3> */}
           <div className="flex-root">
             {bilder.map((object, index) => {
