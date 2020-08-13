@@ -408,7 +408,9 @@ div.projects {
   margin: 0px;
   padding: 3px;
   z-index: 10;
+  width: 100%;
 }
+
 footer {
   position: relative;
 }
@@ -695,10 +697,10 @@ footer > ul > li > p {
     width: auto;
   }
 
-  // div#card {
-  //   // width: 34vh;
-  //   height: 26vh;
-  // }
+  div#card {
+    width: 42vh;
+    height: 30vh;
+  }
 
   div.PP {
     position: absolute;
