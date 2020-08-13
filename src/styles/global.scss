@@ -284,7 +284,7 @@ ul.courses > li {
   /* background-color: #d1e8e223; */
   padding: 0.8%;
   width: 100%;
-  margin: 5px;
+  margin: 5px 5px 0 0;
 }
 .row {
   height: 100%;
@@ -609,6 +609,12 @@ footer > ul > li > p {
   }
 }
 
+// @media only screen and (orientation: landscape) {
+//   div.PP img {
+//     width: 40%;
+//   }
+// }
+
 @media only screen and (max-width: 800px) {
   html {
     background-image: url("../images/portfolio-bc-mobile2.svg");
@@ -689,10 +695,10 @@ footer > ul > li > p {
     width: auto;
   }
 
-  div#card {
-    width: 34vh;
-    height: 26vh;
-  }
+  // div#card {
+  //   // width: 34vh;
+  //   height: 26vh;
+  // }
 
   div.PP {
     position: absolute;
@@ -708,7 +714,7 @@ footer > ul > li > p {
 
   div.PP img {
     opacity: 1;
-    width: 44%;
+    width: 40%;
     margin: 0 auto;
     float: right;
     border-style: none none solid none;

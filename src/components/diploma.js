@@ -9,8 +9,10 @@ export default () => {
         <h1>Higher Vocational Degree</h1>
       </div>
       <div className="diplomaDiv">
-        <h3>Click to download</h3>
         <a href="./examensbevis-2020-ellinor-vase.pdf" download>
+        <h3 className="degreePDF">Click here to download PDF</h3>
+          </a>
+        <a href="https://diplom.nackademin.se/examensbevis-2020-ellinor-vase-6867/" target="_blank">
           <img
             className="degreePic"
             src={examensbevis}

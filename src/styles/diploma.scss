@@ -7,10 +7,23 @@
     background-image: none;
 }
 
+.degreePDF{
+    border: 2px solid #ffcb9a;
+    padding: 8px;
+    width: 50%;
+    margin: 12px auto;
+}
+
 .degreePic{
     height: 400px;
 }
 
 .degreePic:hover{
     box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+@media only screen and (max-width: 800px) {
+    .degreePDF{
+        width: 80%;
+    }
 }
