@@ -10,6 +10,8 @@ html {
   // height: 100vh;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
 }
 
 body {
@@ -633,11 +635,12 @@ footer > ul > li > p {
 @media only screen and (max-width: 800px) {
   html {
     background-image: url("../images/portfolio-bc-mobile2.svg");
-    /* background-attachment: fixed;
-    background-repeat: no-repeat; */
+    // background-attachment: fixed;
     background-repeat: repeat;
+    background-repeat: no-repeat; 
     scroll-behavior: smooth;
-    background-position: left;
+    // background-position: left;
+    background-position: cover;
   }
   div.Head > div > p {
     display: none;
