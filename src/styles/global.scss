@@ -7,7 +7,7 @@ html {
   background-image: url("../images/portfolio-bc2.desc.svg");
   z-index: -1;
   scroll-behavior: smooth;
-  height: 100vh;
+  // height: 100vh;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
 }
@@ -324,6 +324,11 @@ ul.courses > li {
   margin: 0;
 }
 
+// .flex-root{
+//   display: grid;
+//   grid-template-columns: repeat(1, 1fr);
+// }
+
 #card {
   width: 75%;
   height: 60vh;
@@ -604,6 +609,7 @@ footer > ul > li > p {
 
   #card {
     height: 50vh;
+    height: 40vh;
   }
 
   .info-job {
@@ -616,6 +622,13 @@ footer > ul > li > p {
 //     width: 40%;
 //   }
 // }
+
+@media only screen and (max-width: 580px) {
+  div#card {
+    width: 75vw;
+    height: 25vh;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   html {
@@ -697,9 +710,14 @@ footer > ul > li > p {
     width: auto;
   }
 
-  div#card {
-    width: 42vh;
-    height: 30vh;
+  // div#card {
+  //   width: 42vh;
+  //   height: 30vh;
+  // }
+
+  .flex-root{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   div.PP {
