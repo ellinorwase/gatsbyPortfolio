@@ -10,8 +10,6 @@ html {
   // height: 100vh;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
 }
 
 body {
@@ -409,7 +407,7 @@ div.projects {
 
 .footer {
   background-size: cover;
-  background-image: url("../images/footer-pic.svg");
+  background-image: url("../images/footer-background.svg");
   object-fit: cover;
   height: 50%;
   margin: 0px;
@@ -635,12 +633,11 @@ footer > ul > li > p {
 @media only screen and (max-width: 800px) {
   html {
     background-image: url("../images/portfolio-bc-mobile2.svg");
-    // background-attachment: fixed;
+    /* background-attachment: fixed;
+    background-repeat: no-repeat; */
     background-repeat: repeat;
-    background-repeat: no-repeat; 
     scroll-behavior: smooth;
-    // background-position: left;
-    background-position: cover;
+    background-position: left;
   }
   div.Head > div > p {
     display: none;
