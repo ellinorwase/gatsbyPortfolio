@@ -28,9 +28,10 @@ input {
 
   #menuToggle a {
     text-decoration: none;
-    color: #222831;
+    /* color: #222831; */
     color: white;
     transition: color 0.3s ease;
+    background-image: none;
   }
 
   #menuToggle a:hover {
