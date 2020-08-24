@@ -15,7 +15,7 @@ export default () => (
         >
           <img src={linkedin} alt="linkedin" />
         </a>
-        <a href="" target="_blank">
+        <a href="https://www.facebook.com/ellinorwase/" target="_blank">
           <img src={facebook} alt="facebook" />
         </a>
         <a href="https://github.com/ellinorwase" target="_blank">
